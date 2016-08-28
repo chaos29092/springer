@@ -1,0 +1,931 @@
+2016-08-28 02:06:38 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 02:06:38 [scrapy] INFO: Overridden settings: {'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'springer.spiders', 'AUTOTHROTTLE_ENABLED': True, 'SPIDER_MODULES': ['springer.spiders'], 'LOG_FILE': 'test.log', 'COOKIES_ENABLED': False, 'BOT_NAME': 'springer'}
+2016-08-28 02:06:38 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2016-08-28 02:06:38 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 02:06:38 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 02:06:38 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryPipeline']
+2016-08-28 02:06:38 [scrapy] INFO: Spider opened
+2016-08-28 02:06:38 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 02:07:38 [scrapy] INFO: Crawled 65 pages (at 65 pages/min), scraped 61 items (at 61 items/min)
+2016-08-28 02:08:38 [scrapy] INFO: Crawled 136 pages (at 71 pages/min), scraped 127 items (at 66 items/min)
+2016-08-28 02:09:38 [scrapy] INFO: Crawled 191 pages (at 55 pages/min), scraped 180 items (at 53 items/min)
+2016-08-28 02:10:38 [scrapy] INFO: Crawled 258 pages (at 67 pages/min), scraped 243 items (at 63 items/min)
+2016-08-28 02:11:38 [scrapy] INFO: Crawled 321 pages (at 63 pages/min), scraped 305 items (at 62 items/min)
+2016-08-28 02:12:38 [scrapy] INFO: Crawled 388 pages (at 67 pages/min), scraped 368 items (at 63 items/min)
+2016-08-28 02:13:38 [scrapy] INFO: Crawled 446 pages (at 58 pages/min), scraped 423 items (at 55 items/min)
+2016-08-28 02:14:38 [scrapy] INFO: Crawled 516 pages (at 70 pages/min), scraped 490 items (at 67 items/min)
+2016-08-28 02:15:38 [scrapy] INFO: Crawled 585 pages (at 69 pages/min), scraped 555 items (at 65 items/min)
+2016-08-28 02:16:38 [scrapy] INFO: Crawled 642 pages (at 57 pages/min), scraped 610 items (at 55 items/min)
+2016-08-28 02:17:38 [scrapy] INFO: Crawled 715 pages (at 73 pages/min), scraped 679 items (at 69 items/min)
+2016-08-28 02:18:38 [scrapy] INFO: Crawled 780 pages (at 65 pages/min), scraped 741 items (at 62 items/min)
+2016-08-28 02:19:38 [scrapy] INFO: Crawled 845 pages (at 65 pages/min), scraped 803 items (at 62 items/min)
+2016-08-28 02:20:38 [scrapy] INFO: Crawled 916 pages (at 71 pages/min), scraped 869 items (at 66 items/min)
+2016-08-28 02:22:01 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 02:22:01 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'springer.spiders', 'SPIDER_MODULES': ['springer.spiders'], 'CONCURRENT_REQUESTS': 50, 'COOKIES_ENABLED': False, 'AUTOTHROTTLE_ENABLED': True, 'LOG_FILE': 'test.log', 'LOG_LEVEL': 'INFO', 'BOT_NAME': 'springer'}
+2016-08-28 02:22:01 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2016-08-28 02:22:01 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 02:22:01 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 02:22:01 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryPipeline']
+2016-08-28 02:22:01 [scrapy] INFO: Spider opened
+2016-08-28 02:22:01 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 02:23:01 [scrapy] INFO: Crawled 60 pages (at 60 pages/min), scraped 55 items (at 55 items/min)
+2016-08-28 02:24:01 [scrapy] INFO: Crawled 137 pages (at 77 pages/min), scraped 128 items (at 73 items/min)
+2016-08-28 02:25:01 [scrapy] INFO: Crawled 215 pages (at 78 pages/min), scraped 202 items (at 74 items/min)
+2016-08-28 02:26:01 [scrapy] INFO: Crawled 289 pages (at 74 pages/min), scraped 273 items (at 71 items/min)
+2016-08-28 02:27:01 [scrapy] INFO: Crawled 361 pages (at 72 pages/min), scraped 341 items (at 68 items/min)
+2016-08-28 02:28:01 [scrapy] INFO: Crawled 435 pages (at 74 pages/min), scraped 412 items (at 71 items/min)
+2016-08-28 02:29:01 [scrapy] INFO: Crawled 511 pages (at 76 pages/min), scraped 483 items (at 71 items/min)
+2016-08-28 02:30:01 [scrapy] INFO: Crawled 585 pages (at 74 pages/min), scraped 555 items (at 72 items/min)
+2016-08-28 02:31:01 [scrapy] INFO: Crawled 658 pages (at 73 pages/min), scraped 624 items (at 69 items/min)
+2016-08-28 02:32:01 [scrapy] INFO: Crawled 720 pages (at 62 pages/min), scraped 683 items (at 59 items/min)
+2016-08-28 02:33:01 [scrapy] INFO: Crawled 779 pages (at 59 pages/min), scraped 740 items (at 57 items/min)
+2016-08-28 02:34:01 [scrapy] INFO: Crawled 851 pages (at 72 pages/min), scraped 808 items (at 68 items/min)
+2016-08-28 02:35:01 [scrapy] INFO: Crawled 920 pages (at 69 pages/min), scraped 874 items (at 66 items/min)
+2016-08-28 02:36:01 [scrapy] INFO: Crawled 994 pages (at 74 pages/min), scraped 944 items (at 70 items/min)
+2016-08-28 02:37:01 [scrapy] INFO: Crawled 1061 pages (at 67 pages/min), scraped 1008 items (at 64 items/min)
+2016-08-28 02:38:01 [scrapy] INFO: Crawled 1125 pages (at 64 pages/min), scraped 1069 items (at 61 items/min)
+2016-08-28 02:39:01 [scrapy] INFO: Crawled 1192 pages (at 67 pages/min), scraped 1133 items (at 64 items/min)
+2016-08-28 02:40:01 [scrapy] INFO: Crawled 1260 pages (at 68 pages/min), scraped 1198 items (at 65 items/min)
+2016-08-28 02:41:01 [scrapy] INFO: Crawled 1336 pages (at 76 pages/min), scraped 1270 items (at 72 items/min)
+2016-08-28 02:42:01 [scrapy] INFO: Crawled 1400 pages (at 64 pages/min), scraped 1331 items (at 61 items/min)
+2016-08-28 02:43:01 [scrapy] INFO: Crawled 1446 pages (at 46 pages/min), scraped 1375 items (at 44 items/min)
+2016-08-28 02:44:01 [scrapy] INFO: Crawled 1508 pages (at 62 pages/min), scraped 1434 items (at 59 items/min)
+2016-08-28 02:45:01 [scrapy] INFO: Crawled 1568 pages (at 60 pages/min), scraped 1491 items (at 57 items/min)
+2016-08-28 02:46:01 [scrapy] INFO: Crawled 1628 pages (at 60 pages/min), scraped 1548 items (at 57 items/min)
+2016-08-28 02:47:01 [scrapy] INFO: Crawled 1690 pages (at 62 pages/min), scraped 1607 items (at 59 items/min)
+2016-08-28 02:48:01 [scrapy] INFO: Crawled 1757 pages (at 67 pages/min), scraped 1671 items (at 64 items/min)
+2016-08-28 02:49:01 [scrapy] INFO: Crawled 1819 pages (at 62 pages/min), scraped 1730 items (at 59 items/min)
+2016-08-28 02:50:01 [scrapy] INFO: Crawled 1876 pages (at 57 pages/min), scraped 1784 items (at 54 items/min)
+2016-08-28 02:51:01 [scrapy] INFO: Crawled 1943 pages (at 67 pages/min), scraped 1848 items (at 64 items/min)
+2016-08-28 02:52:01 [scrapy] INFO: Crawled 1995 pages (at 52 pages/min), scraped 1898 items (at 50 items/min)
+2016-08-28 02:53:01 [scrapy] INFO: Crawled 2055 pages (at 60 pages/min), scraped 1955 items (at 57 items/min)
+2016-08-28 02:54:01 [scrapy] INFO: Crawled 2117 pages (at 62 pages/min), scraped 2014 items (at 59 items/min)
+2016-08-28 02:55:01 [scrapy] INFO: Crawled 2188 pages (at 71 pages/min), scraped 2080 items (at 66 items/min)
+2016-08-28 02:56:01 [scrapy] INFO: Crawled 2254 pages (at 66 pages/min), scraped 2144 items (at 64 items/min)
+2016-08-28 02:57:01 [scrapy] INFO: Crawled 2323 pages (at 69 pages/min), scraped 2209 items (at 65 items/min)
+2016-08-28 02:58:01 [scrapy] INFO: Crawled 2386 pages (at 63 pages/min), scraped 2270 items (at 61 items/min)
+2016-08-28 02:59:01 [scrapy] INFO: Crawled 2450 pages (at 64 pages/min), scraped 2331 items (at 61 items/min)
+2016-08-28 03:00:01 [scrapy] INFO: Crawled 2514 pages (at 64 pages/min), scraped 2391 items (at 60 items/min)
+2016-08-28 03:01:01 [scrapy] INFO: Crawled 2574 pages (at 60 pages/min), scraped 2449 items (at 58 items/min)
+2016-08-28 03:02:01 [scrapy] INFO: Crawled 2644 pages (at 70 pages/min), scraped 2516 items (at 67 items/min)
+2016-08-28 03:03:01 [scrapy] INFO: Crawled 2707 pages (at 63 pages/min), scraped 2576 items (at 60 items/min)
+2016-08-28 03:04:01 [scrapy] INFO: Crawled 2773 pages (at 66 pages/min), scraped 2639 items (at 63 items/min)
+2016-08-28 03:05:01 [scrapy] INFO: Crawled 2837 pages (at 64 pages/min), scraped 2700 items (at 61 items/min)
+2016-08-28 03:06:01 [scrapy] INFO: Crawled 2900 pages (at 63 pages/min), scraped 2760 items (at 60 items/min)
+2016-08-28 03:07:01 [scrapy] INFO: Crawled 2961 pages (at 61 pages/min), scraped 2818 items (at 58 items/min)
+2016-08-28 03:08:01 [scrapy] INFO: Crawled 3019 pages (at 58 pages/min), scraped 2873 items (at 55 items/min)
+2016-08-28 03:09:01 [scrapy] INFO: Crawled 3075 pages (at 56 pages/min), scraped 2926 items (at 53 items/min)
+2016-08-28 03:10:01 [scrapy] INFO: Crawled 3142 pages (at 67 pages/min), scraped 2990 items (at 64 items/min)
+2016-08-28 03:11:01 [scrapy] INFO: Crawled 3183 pages (at 41 pages/min), scraped 3029 items (at 39 items/min)
+2016-08-28 03:12:01 [scrapy] INFO: Crawled 3253 pages (at 70 pages/min), scraped 3096 items (at 67 items/min)
+2016-08-28 03:13:01 [scrapy] INFO: Crawled 3317 pages (at 64 pages/min), scraped 3157 items (at 61 items/min)
+2016-08-28 03:14:01 [scrapy] INFO: Crawled 3384 pages (at 67 pages/min), scraped 3220 items (at 63 items/min)
+2016-08-28 03:15:01 [scrapy] INFO: Crawled 3451 pages (at 67 pages/min), scraped 3284 items (at 64 items/min)
+2016-08-28 03:16:01 [scrapy] INFO: Crawled 3518 pages (at 67 pages/min), scraped 3348 items (at 64 items/min)
+2016-08-28 03:17:01 [scrapy] INFO: Crawled 3584 pages (at 66 pages/min), scraped 3411 items (at 63 items/min)
+2016-08-28 03:18:01 [scrapy] INFO: Crawled 3649 pages (at 65 pages/min), scraped 3473 items (at 62 items/min)
+2016-08-28 03:19:01 [scrapy] INFO: Crawled 3714 pages (at 65 pages/min), scraped 3535 items (at 62 items/min)
+2016-08-28 03:20:01 [scrapy] INFO: Crawled 3779 pages (at 65 pages/min), scraped 3597 items (at 62 items/min)
+2016-08-28 03:21:01 [scrapy] INFO: Crawled 3839 pages (at 60 pages/min), scraped 3654 items (at 57 items/min)
+2016-08-28 03:22:01 [scrapy] INFO: Crawled 3902 pages (at 63 pages/min), scraped 3714 items (at 60 items/min)
+2016-08-28 03:23:01 [scrapy] INFO: Crawled 3966 pages (at 64 pages/min), scraped 3775 items (at 61 items/min)
+2016-08-28 03:24:01 [scrapy] INFO: Crawled 4035 pages (at 69 pages/min), scraped 3840 items (at 65 items/min)
+2016-08-28 03:25:01 [scrapy] INFO: Crawled 4100 pages (at 65 pages/min), scraped 3902 items (at 62 items/min)
+2016-08-28 03:26:01 [scrapy] INFO: Crawled 4166 pages (at 66 pages/min), scraped 3965 items (at 63 items/min)
+2016-08-28 03:27:01 [scrapy] INFO: Crawled 4228 pages (at 62 pages/min), scraped 4024 items (at 59 items/min)
+2016-08-28 03:28:01 [scrapy] INFO: Crawled 4287 pages (at 59 pages/min), scraped 4080 items (at 56 items/min)
+2016-08-28 03:29:01 [scrapy] INFO: Crawled 4349 pages (at 62 pages/min), scraped 4140 items (at 60 items/min)
+2016-08-28 03:30:01 [scrapy] INFO: Crawled 4412 pages (at 63 pages/min), scraped 4200 items (at 60 items/min)
+2016-08-28 03:31:01 [scrapy] INFO: Crawled 4476 pages (at 64 pages/min), scraped 4260 items (at 60 items/min)
+2016-08-28 03:32:01 [scrapy] INFO: Crawled 4541 pages (at 65 pages/min), scraped 4322 items (at 62 items/min)
+2016-08-28 03:33:01 [scrapy] INFO: Crawled 4607 pages (at 66 pages/min), scraped 4385 items (at 63 items/min)
+2016-08-28 03:34:01 [scrapy] INFO: Crawled 4674 pages (at 67 pages/min), scraped 4449 items (at 64 items/min)
+2016-08-28 03:35:01 [scrapy] INFO: Crawled 4727 pages (at 53 pages/min), scraped 4500 items (at 51 items/min)
+2016-08-28 03:36:01 [scrapy] INFO: Crawled 4791 pages (at 64 pages/min), scraped 4560 items (at 60 items/min)
+2016-08-28 03:37:01 [scrapy] INFO: Crawled 4845 pages (at 54 pages/min), scraped 4612 items (at 52 items/min)
+2016-08-28 03:38:01 [scrapy] INFO: Crawled 4887 pages (at 42 pages/min), scraped 4652 items (at 40 items/min)
+2016-08-28 03:39:01 [scrapy] INFO: Crawled 4952 pages (at 65 pages/min), scraped 4713 items (at 61 items/min)
+2016-08-28 03:40:01 [scrapy] INFO: Crawled 5009 pages (at 57 pages/min), scraped 4768 items (at 55 items/min)
+2016-08-28 03:41:01 [scrapy] INFO: Crawled 5073 pages (at 64 pages/min), scraped 4829 items (at 61 items/min)
+2016-08-28 03:42:01 [scrapy] INFO: Crawled 5128 pages (at 55 pages/min), scraped 4881 items (at 52 items/min)
+2016-08-28 03:43:01 [scrapy] INFO: Crawled 5187 pages (at 59 pages/min), scraped 4938 items (at 57 items/min)
+2016-08-28 03:44:01 [scrapy] INFO: Crawled 5257 pages (at 70 pages/min), scraped 5004 items (at 66 items/min)
+2016-08-28 03:45:01 [scrapy] INFO: Crawled 5326 pages (at 69 pages/min), scraped 5070 items (at 66 items/min)
+2016-08-28 03:46:01 [scrapy] INFO: Crawled 5385 pages (at 59 pages/min), scraped 5126 items (at 56 items/min)
+2016-08-28 03:47:01 [scrapy] INFO: Crawled 5450 pages (at 65 pages/min), scraped 5187 items (at 61 items/min)
+2016-08-28 03:48:01 [scrapy] INFO: Crawled 5513 pages (at 63 pages/min), scraped 5248 items (at 61 items/min)
+2016-08-28 03:49:01 [scrapy] INFO: Crawled 5574 pages (at 61 pages/min), scraped 5306 items (at 58 items/min)
+2016-08-28 03:50:01 [scrapy] INFO: Crawled 5642 pages (at 68 pages/min), scraped 5371 items (at 65 items/min)
+2016-08-28 03:51:01 [scrapy] INFO: Crawled 5709 pages (at 67 pages/min), scraped 5435 items (at 64 items/min)
+2016-08-28 03:52:01 [scrapy] INFO: Crawled 5756 pages (at 47 pages/min), scraped 5479 items (at 44 items/min)
+2016-08-28 03:53:01 [scrapy] INFO: Crawled 5822 pages (at 66 pages/min), scraped 5542 items (at 63 items/min)
+2016-08-28 03:54:01 [scrapy] INFO: Crawled 5889 pages (at 67 pages/min), scraped 5606 items (at 64 items/min)
+2016-08-28 03:55:01 [scrapy] INFO: Crawled 5955 pages (at 66 pages/min), scraped 5669 items (at 63 items/min)
+2016-08-28 03:56:01 [scrapy] INFO: Crawled 6021 pages (at 66 pages/min), scraped 5732 items (at 63 items/min)
+2016-08-28 03:57:01 [scrapy] INFO: Crawled 6086 pages (at 65 pages/min), scraped 5794 items (at 62 items/min)
+2016-08-28 03:58:01 [scrapy] INFO: Crawled 6151 pages (at 65 pages/min), scraped 5856 items (at 62 items/min)
+2016-08-28 03:59:01 [scrapy] INFO: Crawled 6217 pages (at 66 pages/min), scraped 5918 items (at 62 items/min)
+2016-08-28 04:00:01 [scrapy] INFO: Crawled 6280 pages (at 63 pages/min), scraped 5979 items (at 61 items/min)
+2016-08-28 04:01:01 [scrapy] INFO: Crawled 6338 pages (at 58 pages/min), scraped 6033 items (at 54 items/min)
+2016-08-28 04:02:01 [scrapy] INFO: Crawled 6404 pages (at 66 pages/min), scraped 6097 items (at 64 items/min)
+2016-08-28 04:03:01 [scrapy] INFO: Crawled 6471 pages (at 67 pages/min), scraped 6160 items (at 63 items/min)
+2016-08-28 04:04:01 [scrapy] INFO: Crawled 6534 pages (at 63 pages/min), scraped 6220 items (at 60 items/min)
+2016-08-28 04:04:23 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:04:23 [scrapy] INFO: Overridden settings: {'LOG_ENABLED': False, 'CONCURRENT_REQUESTS': 100, 'SPIDER_MODULES': ['springer.spiders'], 'NEWSPIDER_MODULE': 'springer.spiders', 'AUTOTHROTTLE_ENABLED': True, 'LOG_LEVEL': 'INFO', 'BOT_NAME': 'springer', 'LOG_FILE': 'test.log', 'COOKIES_ENABLED': False}
+2016-08-28 04:04:41 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:04:41 [scrapy] INFO: Overridden settings: {'COOKIES_ENABLED': False, 'BOT_NAME': 'springer', 'LOG_LEVEL': 'INFO', 'LOG_FILE': 'test.log', 'AUTOTHROTTLE_ENABLED': True, 'SPIDER_MODULES': ['springer.spiders'], 'NEWSPIDER_MODULE': 'springer.spiders', 'CONCURRENT_REQUESTS': 100}
+2016-08-28 04:04:41 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.logstats.LogStats']
+2016-08-28 04:04:41 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:04:41 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:04:41 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:04:41 [scrapy] INFO: Spider opened
+2016-08-28 04:04:41 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:05:01 [scrapy] INFO: Crawled 6597 pages (at 63 pages/min), scraped 6280 items (at 60 items/min)
+2016-08-28 04:06:01 [scrapy] INFO: Crawled 6667 pages (at 70 pages/min), scraped 6347 items (at 67 items/min)
+2016-08-28 04:07:01 [scrapy] INFO: Crawled 6723 pages (at 56 pages/min), scraped 6400 items (at 53 items/min)
+2016-08-28 04:08:01 [scrapy] INFO: Crawled 6786 pages (at 63 pages/min), scraped 6460 items (at 60 items/min)
+2016-08-28 04:09:01 [scrapy] INFO: Crawled 6853 pages (at 67 pages/min), scraped 6523 items (at 63 items/min)
+2016-08-28 04:10:01 [scrapy] INFO: Crawled 6913 pages (at 60 pages/min), scraped 6581 items (at 58 items/min)
+2016-08-28 04:10:08 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:10:08 [scrapy] INFO: Overridden settings: {'CONCURRENT_REQUESTS': 100, 'LOG_FILE': 'test.log', 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 'springer.spiders', 'LOG_LEVEL': 'INFO', 'AUTOTHROTTLE_ENABLED': True, 'SPIDER_MODULES': ['springer.spiders'], 'BOT_NAME': 'springer'}
+2016-08-28 04:10:08 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2016-08-28 04:10:08 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:10:08 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:10:08 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:10:08 [scrapy] INFO: Spider opened
+2016-08-28 04:10:08 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:11:01 [scrapy] INFO: Crawled 6982 pages (at 69 pages/min), scraped 6647 items (at 66 items/min)
+2016-08-28 04:12:01 [scrapy] INFO: Crawled 7047 pages (at 65 pages/min), scraped 6709 items (at 62 items/min)
+2016-08-28 04:13:01 [scrapy] INFO: Crawled 7111 pages (at 64 pages/min), scraped 6770 items (at 61 items/min)
+2016-08-28 04:14:01 [scrapy] INFO: Crawled 7176 pages (at 65 pages/min), scraped 6832 items (at 62 items/min)
+2016-08-28 04:14:39 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:14:39 [scrapy] INFO: Overridden settings: {'COOKIES_ENABLED': False, 'BOT_NAME': 'springer', 'LOG_FILE': 'test.log', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 100, 'NEWSPIDER_MODULE': 'springer.spiders', 'SPIDER_MODULES': ['springer.spiders'], 'AUTOTHROTTLE_ENABLED': True}
+2016-08-28 04:14:39 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-08-28 04:14:39 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:14:39 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:14:39 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:14:39 [scrapy] INFO: Spider opened
+2016-08-28 04:14:39 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:15:01 [scrapy] INFO: Crawled 7227 pages (at 51 pages/min), scraped 6880 items (at 48 items/min)
+2016-08-28 04:15:24 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:15:24 [scrapy] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'LOG_FILE': 'test.log', 'SPIDER_MODULES': ['springer.spiders'], 'NEWSPIDER_MODULE': 'springer.spiders', 'COOKIES_ENABLED': False, 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS': 100, 'BOT_NAME': 'springer'}
+2016-08-28 04:15:25 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-08-28 04:15:25 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:15:25 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:15:25 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:15:25 [scrapy] INFO: Spider opened
+2016-08-28 04:15:25 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:16:01 [scrapy] INFO: Crawled 7293 pages (at 66 pages/min), scraped 6943 items (at 63 items/min)
+2016-08-28 04:17:01 [scrapy] INFO: Crawled 7361 pages (at 68 pages/min), scraped 7007 items (at 64 items/min)
+2016-08-28 04:18:01 [scrapy] INFO: Crawled 7423 pages (at 62 pages/min), scraped 7067 items (at 60 items/min)
+2016-08-28 04:19:01 [scrapy] INFO: Crawled 7487 pages (at 64 pages/min), scraped 7127 items (at 60 items/min)
+2016-08-28 04:20:01 [scrapy] INFO: Crawled 7558 pages (at 71 pages/min), scraped 7196 items (at 69 items/min)
+2016-08-28 04:21:01 [scrapy] INFO: Crawled 7619 pages (at 61 pages/min), scraped 7254 items (at 58 items/min)
+2016-08-28 04:22:01 [scrapy] INFO: Crawled 7687 pages (at 68 pages/min), scraped 7319 items (at 65 items/min)
+2016-08-28 04:23:01 [scrapy] INFO: Crawled 7751 pages (at 64 pages/min), scraped 7379 items (at 60 items/min)
+2016-08-28 04:24:01 [scrapy] INFO: Crawled 7816 pages (at 65 pages/min), scraped 7441 items (at 62 items/min)
+2016-08-28 04:24:14 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:24:14 [scrapy] INFO: Overridden settings: {'LOG_FILE': 'test.log', 'AUTOTHROTTLE_ENABLED': True, 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['springer.spiders'], 'COOKIES_ENABLED': False, 'BOT_NAME': 'springer', 'NEWSPIDER_MODULE': 'springer.spiders', 'CONCURRENT_REQUESTS': 100}
+2016-08-28 04:24:14 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2016-08-28 04:24:14 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:24:14 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:24:14 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:24:14 [scrapy] INFO: Spider opened
+2016-08-28 04:24:14 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:24:15 [scrapy] ERROR: Spider error processing <GET http://link.springer.com/search?facet-discipline=%22Chemistry%22&facet-content-type=%22Chapter%22&facet-start-year=2010&previous-start-year=2009&facet-end-year=2016&previous-end-year=2016> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for request_or_item in self._requests_to_follow(response):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 55, in _requests_to_follow
+    for n, rule in enumerate(self._rules):
+AttributeError: 'BookSpider' object has no attribute '_rules'
+2016-08-28 04:24:20 [scrapy] ERROR: Spider error processing <GET http://link.springer.com/search?facet-start-year=2010&facet-discipline=%22Chemistry%22&facet-end-year=2016&previous-start-year=2009&facet-content-type=%22Chapter%22&previous-end-year=2016&sortOrder=oldestFirst> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for request_or_item in self._requests_to_follow(response):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 55, in _requests_to_follow
+    for n, rule in enumerate(self._rules):
+AttributeError: 'BookSpider' object has no attribute '_rules'
+2016-08-28 04:24:20 [scrapy] INFO: Closing spider (finished)
+2016-08-28 04:24:20 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 931,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 31060,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 8, 28, 11, 24, 20, 902360),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/AttributeError': 2,
+ 'start_time': datetime.datetime(2016, 8, 28, 11, 24, 14, 247443)}
+2016-08-28 04:24:20 [scrapy] INFO: Spider closed (finished)
+2016-08-28 04:25:01 [scrapy] INFO: Crawled 7881 pages (at 65 pages/min), scraped 7503 items (at 62 items/min)
+2016-08-28 04:25:44 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:25:44 [scrapy] INFO: Overridden settings: {'SPIDER_MODULES': ['springer.spiders'], 'CONCURRENT_REQUESTS': 100, 'AUTOTHROTTLE_ENABLED': True, 'NEWSPIDER_MODULE': 'springer.spiders', 'LOG_LEVEL': 'INFO', 'LOG_FILE': 'test.log', 'COOKIES_ENABLED': False, 'BOT_NAME': 'springer'}
+2016-08-28 04:25:44 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-08-28 04:25:44 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:25:44 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:25:44 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:25:44 [scrapy] INFO: Spider opened
+2016-08-28 04:25:44 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:25:45 [scrapy] ERROR: Spider error processing <GET http://link.springer.com/search?facet-discipline=%22Chemistry%22&facet-content-type=%22Chapter%22&facet-start-year=2010&previous-start-year=2009&facet-end-year=2016&previous-end-year=2016> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for request_or_item in self._requests_to_follow(response):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 55, in _requests_to_follow
+    for n, rule in enumerate(self._rules):
+AttributeError: 'BookSpider' object has no attribute '_rules'
+2016-08-28 04:25:48 [scrapy] ERROR: Spider error processing <GET http://link.springer.com/search?facet-start-year=2010&facet-discipline=%22Chemistry%22&facet-end-year=2016&previous-start-year=2009&facet-content-type=%22Chapter%22&previous-end-year=2016&sortOrder=oldestFirst> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for request_or_item in self._requests_to_follow(response):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spiders/crawl.py", line 55, in _requests_to_follow
+    for n, rule in enumerate(self._rules):
+AttributeError: 'BookSpider' object has no attribute '_rules'
+2016-08-28 04:25:48 [scrapy] INFO: Closing spider (finished)
+2016-08-28 04:25:48 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 913,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 30993,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 8, 28, 11, 25, 48, 316499),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 7,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/AttributeError': 2,
+ 'start_time': datetime.datetime(2016, 8, 28, 11, 25, 44, 481159)}
+2016-08-28 04:25:48 [scrapy] INFO: Spider closed (finished)
+2016-08-28 04:26:01 [scrapy] INFO: Crawled 7942 pages (at 61 pages/min), scraped 7561 items (at 58 items/min)
+2016-08-28 04:27:01 [scrapy] INFO: Crawled 8002 pages (at 60 pages/min), scraped 7619 items (at 58 items/min)
+2016-08-28 04:27:46 [scrapy] INFO: Scrapy 1.1.1 started (bot: springer)
+2016-08-28 04:27:46 [scrapy] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'COOKIES_ENABLED': False, 'NEWSPIDER_MODULE': 'springer.spiders', 'LOG_FILE': 'test.log', 'BOT_NAME': 'springer', 'SPIDER_MODULES': ['springer.spiders'], 'CONCURRENT_REQUESTS': 100, 'LOG_LEVEL': 'INFO'}
+2016-08-28 04:27:46 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.throttle.AutoThrottle',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2016-08-28 04:27:46 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'springer.middlewares.rotate_useragent.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-08-28 04:27:46 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-08-28 04:27:46 [scrapy] INFO: Enabled item pipelines:
+['springer.pipelines.MongoChemistryBookPipeline']
+2016-08-28 04:27:46 [scrapy] INFO: Spider opened
+2016-08-28 04:27:46 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-28 04:28:01 [scrapy] INFO: Crawled 8066 pages (at 64 pages/min), scraped 7679 items (at 60 items/min)
+2016-08-28 04:29:01 [scrapy] INFO: Crawled 8136 pages (at 70 pages/min), scraped 7745 items (at 66 items/min)
+2016-08-28 04:30:01 [scrapy] INFO: Crawled 8201 pages (at 65 pages/min), scraped 7807 items (at 62 items/min)
+2016-08-28 04:31:01 [scrapy] INFO: Crawled 8265 pages (at 64 pages/min), scraped 7869 items (at 62 items/min)
+2016-08-28 04:32:01 [scrapy] INFO: Crawled 8328 pages (at 63 pages/min), scraped 7929 items (at 60 items/min)
+2016-08-28 04:33:01 [scrapy] INFO: Crawled 8401 pages (at 73 pages/min), scraped 7999 items (at 70 items/min)
+2016-08-28 04:34:01 [scrapy] INFO: Crawled 8462 pages (at 61 pages/min), scraped 8057 items (at 58 items/min)
+2016-08-28 04:35:01 [scrapy] INFO: Crawled 8526 pages (at 64 pages/min), scraped 8118 items (at 61 items/min)
+2016-08-28 04:36:01 [scrapy] INFO: Crawled 8587 pages (at 61 pages/min), scraped 8176 items (at 58 items/min)
+2016-08-28 04:37:01 [scrapy] INFO: Crawled 8651 pages (at 64 pages/min), scraped 8237 items (at 61 items/min)
+2016-08-28 04:38:01 [scrapy] INFO: Crawled 8714 pages (at 63 pages/min), scraped 8297 items (at 60 items/min)
+2016-08-28 04:39:01 [scrapy] INFO: Crawled 8779 pages (at 65 pages/min), scraped 8359 items (at 62 items/min)
+2016-08-28 04:40:01 [scrapy] INFO: Crawled 8843 pages (at 64 pages/min), scraped 8419 items (at 60 items/min)
+2016-08-28 04:41:01 [scrapy] INFO: Crawled 8908 pages (at 65 pages/min), scraped 8480 items (at 61 items/min)
+2016-08-28 04:42:01 [scrapy] INFO: Crawled 8969 pages (at 61 pages/min), scraped 8539 items (at 59 items/min)
+2016-08-28 04:43:01 [scrapy] INFO: Crawled 9032 pages (at 63 pages/min), scraped 8599 items (at 60 items/min)
+2016-08-28 04:44:01 [scrapy] INFO: Crawled 9096 pages (at 64 pages/min), scraped 8659 items (at 60 items/min)
+2016-08-28 04:45:01 [scrapy] INFO: Crawled 9160 pages (at 64 pages/min), scraped 8721 items (at 62 items/min)
+2016-08-28 04:46:01 [scrapy] INFO: Crawled 9217 pages (at 57 pages/min), scraped 8776 items (at 55 items/min)
+2016-08-28 04:47:01 [scrapy] INFO: Crawled 9279 pages (at 62 pages/min), scraped 8835 items (at 59 items/min)
+2016-08-28 04:48:01 [scrapy] INFO: Crawled 9337 pages (at 58 pages/min), scraped 8890 items (at 55 items/min)
+2016-08-28 04:49:01 [scrapy] INFO: Crawled 9397 pages (at 60 pages/min), scraped 8947 items (at 57 items/min)
+2016-08-28 04:50:01 [scrapy] INFO: Crawled 9461 pages (at 64 pages/min), scraped 9008 items (at 61 items/min)
+2016-08-28 04:51:01 [scrapy] INFO: Crawled 9529 pages (at 68 pages/min), scraped 9073 items (at 65 items/min)
+2016-08-28 04:52:01 [scrapy] INFO: Crawled 9587 pages (at 58 pages/min), scraped 9128 items (at 55 items/min)
+2016-08-28 04:53:01 [scrapy] INFO: Crawled 9648 pages (at 61 pages/min), scraped 9185 items (at 57 items/min)
+2016-08-28 04:54:01 [scrapy] INFO: Crawled 9699 pages (at 51 pages/min), scraped 9234 items (at 49 items/min)
+2016-08-28 04:55:01 [scrapy] INFO: Crawled 9759 pages (at 60 pages/min), scraped 9292 items (at 58 items/min)
+2016-08-28 04:56:01 [scrapy] INFO: Crawled 9822 pages (at 63 pages/min), scraped 9352 items (at 60 items/min)
+2016-08-28 04:57:01 [scrapy] INFO: Crawled 9884 pages (at 62 pages/min), scraped 9411 items (at 59 items/min)
+2016-08-28 04:58:01 [scrapy] INFO: Crawled 9920 pages (at 36 pages/min), scraped 9445 items (at 34 items/min)
+2016-08-28 04:59:01 [scrapy] INFO: Crawled 9986 pages (at 66 pages/min), scraped 9508 items (at 63 items/min)
+2016-08-28 05:00:01 [scrapy] INFO: Crawled 10050 pages (at 64 pages/min), scraped 9569 items (at 61 items/min)
+2016-08-28 05:01:01 [scrapy] INFO: Crawled 10115 pages (at 65 pages/min), scraped 9631 items (at 62 items/min)
+2016-08-28 05:02:01 [scrapy] INFO: Crawled 10165 pages (at 50 pages/min), scraped 9678 items (at 47 items/min)
+2016-08-28 05:03:01 [scrapy] INFO: Crawled 10228 pages (at 63 pages/min), scraped 9738 items (at 60 items/min)
+2016-08-28 05:04:01 [scrapy] INFO: Crawled 10292 pages (at 64 pages/min), scraped 9799 items (at 61 items/min)
+2016-08-28 05:05:01 [scrapy] INFO: Crawled 10359 pages (at 67 pages/min), scraped 9863 items (at 64 items/min)
+2016-08-28 05:06:01 [scrapy] INFO: Crawled 10422 pages (at 63 pages/min), scraped 9923 items (at 60 items/min)
+2016-08-28 05:07:01 [scrapy] INFO: Crawled 10478 pages (at 56 pages/min), scraped 9977 items (at 54 items/min)
+2016-08-28 05:08:01 [scrapy] INFO: Crawled 10534 pages (at 56 pages/min), scraped 10030 items (at 53 items/min)
+2016-08-28 05:09:01 [scrapy] INFO: Crawled 10579 pages (at 45 pages/min), scraped 10072 items (at 42 items/min)
+2016-08-28 05:10:01 [scrapy] INFO: Crawled 10644 pages (at 65 pages/min), scraped 10135 items (at 63 items/min)
+2016-08-28 05:11:01 [scrapy] INFO: Crawled 10707 pages (at 63 pages/min), scraped 10195 items (at 60 items/min)
+2016-08-28 05:12:01 [scrapy] INFO: Crawled 10767 pages (at 60 pages/min), scraped 10252 items (at 57 items/min)
+2016-08-28 05:13:01 [scrapy] INFO: Crawled 10833 pages (at 66 pages/min), scraped 10315 items (at 63 items/min)
+2016-08-28 05:14:01 [scrapy] INFO: Crawled 10898 pages (at 65 pages/min), scraped 10377 items (at 62 items/min)
+2016-08-28 05:15:01 [scrapy] INFO: Crawled 10955 pages (at 57 pages/min), scraped 10431 items (at 54 items/min)
+2016-08-28 05:16:01 [scrapy] INFO: Crawled 11017 pages (at 62 pages/min), scraped 10490 items (at 59 items/min)
+2016-08-28 05:17:01 [scrapy] INFO: Crawled 11080 pages (at 63 pages/min), scraped 10550 items (at 60 items/min)
+2016-08-28 05:18:01 [scrapy] INFO: Crawled 11142 pages (at 62 pages/min), scraped 10609 items (at 59 items/min)
+2016-08-28 05:19:01 [scrapy] INFO: Crawled 11202 pages (at 60 pages/min), scraped 10666 items (at 57 items/min)
+2016-08-28 05:20:01 [scrapy] INFO: Crawled 11269 pages (at 67 pages/min), scraped 10730 items (at 64 items/min)
+2016-08-28 05:21:01 [scrapy] INFO: Crawled 11329 pages (at 60 pages/min), scraped 10787 items (at 57 items/min)
+2016-08-28 05:22:01 [scrapy] INFO: Crawled 11380 pages (at 51 pages/min), scraped 10836 items (at 49 items/min)
+2016-08-28 05:23:01 [scrapy] INFO: Crawled 11441 pages (at 61 pages/min), scraped 10894 items (at 58 items/min)
+2016-08-28 05:24:01 [scrapy] INFO: Crawled 11504 pages (at 63 pages/min), scraped 10954 items (at 60 items/min)
+2016-08-28 05:25:01 [scrapy] INFO: Crawled 11563 pages (at 59 pages/min), scraped 11010 items (at 56 items/min)
+2016-08-28 05:26:01 [scrapy] INFO: Crawled 11631 pages (at 68 pages/min), scraped 11075 items (at 65 items/min)
+2016-08-28 05:27:01 [scrapy] INFO: Crawled 11688 pages (at 57 pages/min), scraped 11129 items (at 54 items/min)
+2016-08-28 05:28:01 [scrapy] INFO: Crawled 11751 pages (at 63 pages/min), scraped 11189 items (at 60 items/min)
+2016-08-28 05:29:01 [scrapy] INFO: Crawled 11814 pages (at 63 pages/min), scraped 11249 items (at 60 items/min)
+2016-08-28 05:30:01 [scrapy] INFO: Crawled 11878 pages (at 64 pages/min), scraped 11309 items (at 60 items/min)
+2016-08-28 05:31:01 [scrapy] INFO: Crawled 11936 pages (at 58 pages/min), scraped 11365 items (at 56 items/min)
+2016-08-28 05:32:01 [scrapy] INFO: Crawled 12001 pages (at 65 pages/min), scraped 11427 items (at 62 items/min)
+2016-08-28 05:33:01 [scrapy] INFO: Crawled 12068 pages (at 67 pages/min), scraped 11491 items (at 64 items/min)
+2016-08-28 05:34:01 [scrapy] INFO: Crawled 12133 pages (at 65 pages/min), scraped 11553 items (at 62 items/min)
+2016-08-28 05:35:01 [scrapy] INFO: Crawled 12191 pages (at 58 pages/min), scraped 11608 items (at 55 items/min)
+2016-08-28 05:36:01 [scrapy] INFO: Crawled 12257 pages (at 66 pages/min), scraped 11671 items (at 63 items/min)
+2016-08-28 05:37:01 [scrapy] INFO: Crawled 12321 pages (at 64 pages/min), scraped 11732 items (at 61 items/min)
+2016-08-28 05:38:01 [scrapy] INFO: Crawled 12381 pages (at 60 pages/min), scraped 11789 items (at 57 items/min)
+2016-08-28 05:39:01 [scrapy] INFO: Crawled 12448 pages (at 67 pages/min), scraped 11853 items (at 64 items/min)
+2016-08-28 05:40:01 [scrapy] INFO: Crawled 12497 pages (at 49 pages/min), scraped 11899 items (at 46 items/min)
+2016-08-28 05:41:01 [scrapy] INFO: Crawled 12557 pages (at 60 pages/min), scraped 11957 items (at 58 items/min)
+2016-08-28 05:42:01 [scrapy] INFO: Crawled 12618 pages (at 61 pages/min), scraped 12015 items (at 58 items/min)
+2016-08-28 05:43:01 [scrapy] INFO: Crawled 12681 pages (at 63 pages/min), scraped 12075 items (at 60 items/min)
+2016-08-28 05:44:01 [scrapy] INFO: Crawled 12747 pages (at 66 pages/min), scraped 12138 items (at 63 items/min)
+2016-08-28 05:45:01 [scrapy] INFO: Crawled 12812 pages (at 65 pages/min), scraped 12199 items (at 61 items/min)
+2016-08-28 05:46:01 [scrapy] INFO: Crawled 12873 pages (at 61 pages/min), scraped 12258 items (at 59 items/min)
+2016-08-28 05:47:01 [scrapy] INFO: Crawled 12939 pages (at 66 pages/min), scraped 12320 items (at 62 items/min)
+2016-08-28 05:48:01 [scrapy] INFO: Crawled 13004 pages (at 65 pages/min), scraped 12382 items (at 62 items/min)
+2016-08-28 05:49:01 [scrapy] INFO: Crawled 13045 pages (at 41 pages/min), scraped 12421 items (at 39 items/min)
+2016-08-28 05:50:01 [scrapy] INFO: Crawled 13068 pages (at 23 pages/min), scraped 12443 items (at 22 items/min)
+2016-08-28 05:51:01 [scrapy] INFO: Crawled 13132 pages (at 64 pages/min), scraped 12503 items (at 60 items/min)
+2016-08-28 05:52:01 [scrapy] INFO: Crawled 13201 pages (at 69 pages/min), scraped 12570 items (at 67 items/min)
+2016-08-28 05:53:01 [scrapy] INFO: Crawled 13267 pages (at 66 pages/min), scraped 12633 items (at 63 items/min)
+2016-08-28 05:54:01 [scrapy] INFO: Crawled 13326 pages (at 59 pages/min), scraped 12689 items (at 56 items/min)
+2016-08-28 05:55:01 [scrapy] INFO: Crawled 13394 pages (at 68 pages/min), scraped 12754 items (at 65 items/min)
+2016-08-28 05:56:01 [scrapy] INFO: Crawled 13461 pages (at 67 pages/min), scraped 12817 items (at 63 items/min)
+2016-08-28 05:57:01 [scrapy] INFO: Crawled 13522 pages (at 61 pages/min), scraped 12876 items (at 59 items/min)
+2016-08-28 05:58:01 [scrapy] INFO: Crawled 13588 pages (at 66 pages/min), scraped 12938 items (at 62 items/min)
+2016-08-28 05:59:01 [scrapy] INFO: Crawled 13654 pages (at 66 pages/min), scraped 13001 items (at 63 items/min)
+2016-08-28 06:00:01 [scrapy] INFO: Crawled 13719 pages (at 65 pages/min), scraped 13063 items (at 62 items/min)
+2016-08-28 06:01:01 [scrapy] INFO: Crawled 13771 pages (at 52 pages/min), scraped 13113 items (at 50 items/min)
+2016-08-28 06:02:01 [scrapy] INFO: Crawled 13835 pages (at 64 pages/min), scraped 13174 items (at 61 items/min)
+2016-08-28 06:03:01 [scrapy] INFO: Crawled 13899 pages (at 64 pages/min), scraped 13235 items (at 61 items/min)
+2016-08-28 06:04:01 [scrapy] INFO: Crawled 13964 pages (at 65 pages/min), scraped 13297 items (at 62 items/min)
+2016-08-28 06:05:01 [scrapy] INFO: Crawled 14030 pages (at 66 pages/min), scraped 13359 items (at 62 items/min)
+2016-08-28 06:06:01 [scrapy] INFO: Crawled 14095 pages (at 65 pages/min), scraped 13421 items (at 62 items/min)
+2016-08-28 06:07:01 [scrapy] INFO: Crawled 14160 pages (at 65 pages/min), scraped 13483 items (at 62 items/min)
+2016-08-28 06:08:01 [scrapy] INFO: Crawled 14226 pages (at 66 pages/min), scraped 13546 items (at 63 items/min)
+2016-08-28 06:09:01 [scrapy] INFO: Crawled 14290 pages (at 64 pages/min), scraped 13607 items (at 61 items/min)
+2016-08-28 06:10:01 [scrapy] INFO: Crawled 14354 pages (at 64 pages/min), scraped 13668 items (at 61 items/min)
+2016-08-28 06:11:01 [scrapy] INFO: Crawled 14417 pages (at 63 pages/min), scraped 13728 items (at 60 items/min)
+2016-08-28 06:12:01 [scrapy] INFO: Crawled 14484 pages (at 67 pages/min), scraped 13792 items (at 64 items/min)
+2016-08-28 06:13:01 [scrapy] INFO: Crawled 14549 pages (at 65 pages/min), scraped 13854 items (at 62 items/min)
+2016-08-28 06:14:01 [scrapy] INFO: Crawled 14617 pages (at 68 pages/min), scraped 13918 items (at 64 items/min)
+2016-08-28 06:15:01 [scrapy] INFO: Crawled 14683 pages (at 66 pages/min), scraped 13981 items (at 63 items/min)
+2016-08-28 06:16:01 [scrapy] INFO: Crawled 14745 pages (at 62 pages/min), scraped 14040 items (at 59 items/min)
+2016-08-28 06:17:01 [scrapy] INFO: Crawled 14801 pages (at 56 pages/min), scraped 14094 items (at 54 items/min)
+2016-08-28 06:18:01 [scrapy] INFO: Crawled 14864 pages (at 63 pages/min), scraped 14153 items (at 59 items/min)
+2016-08-28 06:19:01 [scrapy] INFO: Crawled 14928 pages (at 64 pages/min), scraped 14215 items (at 62 items/min)
+2016-08-28 06:20:01 [scrapy] INFO: Crawled 14991 pages (at 63 pages/min), scraped 14275 items (at 60 items/min)
+2016-08-28 06:21:01 [scrapy] INFO: Crawled 15059 pages (at 68 pages/min), scraped 14338 items (at 63 items/min)
+2016-08-28 06:22:01 [scrapy] INFO: Crawled 15119 pages (at 60 pages/min), scraped 14397 items (at 59 items/min)
+2016-08-28 06:23:01 [scrapy] INFO: Crawled 15182 pages (at 63 pages/min), scraped 14457 items (at 60 items/min)
+2016-08-28 06:24:01 [scrapy] INFO: Crawled 15250 pages (at 68 pages/min), scraped 14521 items (at 64 items/min)
+2016-08-28 06:25:01 [scrapy] INFO: Crawled 15297 pages (at 47 pages/min), scraped 14566 items (at 45 items/min)
+2016-08-28 06:26:01 [scrapy] INFO: Crawled 15360 pages (at 63 pages/min), scraped 14626 items (at 60 items/min)
+2016-08-28 06:27:01 [scrapy] INFO: Crawled 15424 pages (at 64 pages/min), scraped 14687 items (at 61 items/min)
+2016-08-28 06:28:01 [scrapy] INFO: Crawled 15488 pages (at 64 pages/min), scraped 14748 items (at 61 items/min)
+2016-08-28 06:29:01 [scrapy] INFO: Crawled 15552 pages (at 64 pages/min), scraped 14809 items (at 61 items/min)
+2016-08-28 06:30:01 [scrapy] INFO: Crawled 15617 pages (at 65 pages/min), scraped 14871 items (at 62 items/min)
+2016-08-28 06:31:01 [scrapy] INFO: Crawled 15683 pages (at 66 pages/min), scraped 14934 items (at 63 items/min)
+2016-08-28 06:32:01 [scrapy] INFO: Crawled 15746 pages (at 63 pages/min), scraped 14994 items (at 60 items/min)
+2016-08-28 06:33:01 [scrapy] INFO: Crawled 15814 pages (at 68 pages/min), scraped 15058 items (at 64 items/min)
+2016-08-28 06:34:01 [scrapy] INFO: Crawled 15881 pages (at 67 pages/min), scraped 15122 items (at 64 items/min)
+2016-08-28 06:35:01 [scrapy] INFO: Crawled 15947 pages (at 66 pages/min), scraped 15185 items (at 63 items/min)
+2016-08-28 06:36:01 [scrapy] INFO: Crawled 16016 pages (at 69 pages/min), scraped 15251 items (at 66 items/min)
+2016-08-28 06:37:01 [scrapy] INFO: Crawled 16085 pages (at 69 pages/min), scraped 15317 items (at 66 items/min)
+2016-08-28 06:38:01 [scrapy] INFO: Crawled 16140 pages (at 55 pages/min), scraped 15369 items (at 52 items/min)
+2016-08-28 06:39:01 [scrapy] INFO: Crawled 16203 pages (at 63 pages/min), scraped 15429 items (at 60 items/min)
+2016-08-28 06:40:01 [scrapy] INFO: Crawled 16272 pages (at 69 pages/min), scraped 15494 items (at 65 items/min)
+2016-08-28 06:41:01 [scrapy] INFO: Crawled 16334 pages (at 62 pages/min), scraped 15554 items (at 60 items/min)
+2016-08-28 06:42:01 [scrapy] INFO: Crawled 16391 pages (at 57 pages/min), scraped 15608 items (at 54 items/min)
+2016-08-28 06:43:01 [scrapy] INFO: Crawled 16452 pages (at 61 pages/min), scraped 15666 items (at 58 items/min)
+2016-08-28 06:44:01 [scrapy] INFO: Crawled 16517 pages (at 65 pages/min), scraped 15728 items (at 62 items/min)
+2016-08-28 06:45:01 [scrapy] INFO: Crawled 16584 pages (at 67 pages/min), scraped 15791 items (at 63 items/min)
+2016-08-28 06:46:01 [scrapy] INFO: Crawled 16653 pages (at 69 pages/min), scraped 15857 items (at 66 items/min)
+2016-08-28 06:47:01 [scrapy] INFO: Crawled 16717 pages (at 64 pages/min), scraped 15918 items (at 61 items/min)
+2016-08-28 06:48:01 [scrapy] INFO: Crawled 16783 pages (at 66 pages/min), scraped 15981 items (at 63 items/min)
+2016-08-28 06:49:01 [scrapy] INFO: Crawled 16855 pages (at 72 pages/min), scraped 16050 items (at 69 items/min)
+2016-08-28 06:50:01 [scrapy] INFO: Crawled 16917 pages (at 62 pages/min), scraped 16109 items (at 59 items/min)
+2016-08-28 06:51:01 [scrapy] INFO: Crawled 16982 pages (at 65 pages/min), scraped 16171 items (at 62 items/min)
+2016-08-28 06:52:01 [scrapy] INFO: Crawled 17049 pages (at 67 pages/min), scraped 16235 items (at 64 items/min)
+2016-08-28 06:53:01 [scrapy] INFO: Crawled 17116 pages (at 67 pages/min), scraped 16297 items (at 62 items/min)
+2016-08-28 06:54:01 [scrapy] INFO: Crawled 17178 pages (at 62 pages/min), scraped 16357 items (at 60 items/min)
+2016-08-28 06:55:01 [scrapy] INFO: Crawled 17247 pages (at 69 pages/min), scraped 16423 items (at 66 items/min)
+2016-08-28 06:56:01 [scrapy] INFO: Crawled 17316 pages (at 69 pages/min), scraped 16489 items (at 66 items/min)
+2016-08-28 06:57:01 [scrapy] INFO: Crawled 17382 pages (at 66 pages/min), scraped 16552 items (at 63 items/min)
+2016-08-28 06:58:01 [scrapy] INFO: Crawled 17452 pages (at 70 pages/min), scraped 16618 items (at 66 items/min)
+2016-08-28 06:59:01 [scrapy] INFO: Crawled 17511 pages (at 59 pages/min), scraped 16675 items (at 57 items/min)
+2016-08-28 07:00:01 [scrapy] INFO: Crawled 17579 pages (at 68 pages/min), scraped 16739 items (at 64 items/min)
+2016-08-28 07:01:01 [scrapy] INFO: Crawled 17644 pages (at 65 pages/min), scraped 16801 items (at 62 items/min)
+2016-08-28 07:02:01 [scrapy] INFO: Crawled 17696 pages (at 52 pages/min), scraped 16851 items (at 50 items/min)
+2016-08-28 07:03:01 [scrapy] INFO: Crawled 17754 pages (at 58 pages/min), scraped 16906 items (at 55 items/min)
+2016-08-28 07:04:01 [scrapy] INFO: Crawled 17794 pages (at 40 pages/min), scraped 16944 items (at 38 items/min)
+2016-08-28 07:05:01 [scrapy] INFO: Crawled 17826 pages (at 32 pages/min), scraped 16975 items (at 31 items/min)
+2016-08-28 07:06:01 [scrapy] INFO: Crawled 17890 pages (at 64 pages/min), scraped 17035 items (at 60 items/min)
+2016-08-28 07:07:01 [scrapy] INFO: Crawled 17952 pages (at 62 pages/min), scraped 17095 items (at 60 items/min)
+2016-08-28 07:08:01 [scrapy] INFO: Crawled 18017 pages (at 65 pages/min), scraped 17157 items (at 62 items/min)
+2016-08-28 07:09:01 [scrapy] INFO: Crawled 18078 pages (at 61 pages/min), scraped 17215 items (at 58 items/min)
+2016-08-28 07:10:01 [scrapy] INFO: Crawled 18144 pages (at 66 pages/min), scraped 17277 items (at 62 items/min)
+2016-08-28 07:11:01 [scrapy] INFO: Crawled 18206 pages (at 62 pages/min), scraped 17337 items (at 60 items/min)
+2016-08-28 07:12:01 [scrapy] INFO: Crawled 18256 pages (at 50 pages/min), scraped 17384 items (at 47 items/min)
+2016-08-28 07:13:01 [scrapy] INFO: Crawled 18321 pages (at 65 pages/min), scraped 17446 items (at 62 items/min)
+2016-08-28 07:14:01 [scrapy] INFO: Crawled 18387 pages (at 66 pages/min), scraped 17509 items (at 63 items/min)
+2016-08-28 07:15:01 [scrapy] INFO: Crawled 18455 pages (at 68 pages/min), scraped 17574 items (at 65 items/min)
+2016-08-28 07:16:01 [scrapy] INFO: Crawled 18522 pages (at 67 pages/min), scraped 17637 items (at 63 items/min)
+2016-08-28 07:17:01 [scrapy] INFO: Crawled 18587 pages (at 65 pages/min), scraped 17699 items (at 62 items/min)
+2016-08-28 07:18:01 [scrapy] INFO: Crawled 18645 pages (at 58 pages/min), scraped 17755 items (at 56 items/min)
+2016-08-28 07:19:01 [scrapy] INFO: Crawled 18711 pages (at 66 pages/min), scraped 17817 items (at 62 items/min)
+2016-08-28 07:20:01 [scrapy] INFO: Crawled 18770 pages (at 59 pages/min), scraped 17873 items (at 56 items/min)
+2016-08-28 07:21:01 [scrapy] INFO: Crawled 18833 pages (at 63 pages/min), scraped 17934 items (at 61 items/min)
+2016-08-28 07:22:01 [scrapy] INFO: Crawled 18898 pages (at 65 pages/min), scraped 17996 items (at 62 items/min)
+2016-08-28 07:23:01 [scrapy] INFO: Crawled 18968 pages (at 70 pages/min), scraped 18062 items (at 66 items/min)
+2016-08-28 07:24:01 [scrapy] INFO: Crawled 19021 pages (at 53 pages/min), scraped 18113 items (at 51 items/min)
+2016-08-28 07:25:01 [scrapy] INFO: Crawled 19088 pages (at 67 pages/min), scraped 18177 items (at 64 items/min)
+2016-08-28 07:26:01 [scrapy] INFO: Crawled 19152 pages (at 64 pages/min), scraped 18237 items (at 60 items/min)
+2016-08-28 07:27:01 [scrapy] INFO: Crawled 19219 pages (at 67 pages/min), scraped 18301 items (at 64 items/min)
+2016-08-28 07:28:01 [scrapy] INFO: Crawled 19286 pages (at 67 pages/min), scraped 18365 items (at 64 items/min)
+2016-08-28 07:29:01 [scrapy] INFO: Crawled 19340 pages (at 54 pages/min), scraped 18416 items (at 51 items/min)
+2016-08-28 07:30:01 [scrapy] INFO: Crawled 19394 pages (at 54 pages/min), scraped 18468 items (at 52 items/min)
+2016-08-28 07:31:01 [scrapy] INFO: Crawled 19459 pages (at 65 pages/min), scraped 18530 items (at 62 items/min)
+2016-08-28 07:32:01 [scrapy] INFO: Crawled 19521 pages (at 62 pages/min), scraped 18589 items (at 59 items/min)
+2016-08-28 07:33:01 [scrapy] INFO: Crawled 19523 pages (at 2 pages/min), scraped 18591 items (at 2 items/min)
+2016-08-28 07:34:01 [scrapy] INFO: Crawled 19572 pages (at 49 pages/min), scraped 18637 items (at 46 items/min)
+2016-08-28 07:35:01 [scrapy] INFO: Crawled 19626 pages (at 54 pages/min), scraped 18689 items (at 52 items/min)
+2016-08-28 07:36:01 [scrapy] INFO: Crawled 19701 pages (at 75 pages/min), scraped 18760 items (at 71 items/min)
+2016-08-28 07:37:01 [scrapy] INFO: Crawled 19760 pages (at 59 pages/min), scraped 18817 items (at 57 items/min)
+2016-08-28 07:38:01 [scrapy] INFO: Crawled 19818 pages (at 58 pages/min), scraped 18871 items (at 54 items/min)
+2016-08-28 07:39:01 [scrapy] INFO: Crawled 19878 pages (at 60 pages/min), scraped 18929 items (at 58 items/min)
+2016-08-28 07:40:01 [scrapy] INFO: Crawled 19931 pages (at 53 pages/min), scraped 18979 items (at 50 items/min)
+2016-08-28 07:41:01 [scrapy] INFO: Crawled 19977 pages (at 46 pages/min), scraped 19023 items (at 44 items/min)
+2016-08-28 07:42:01 [scrapy] INFO: Crawled 20040 pages (at 63 pages/min), scraped 19083 items (at 60 items/min)
+2016-08-28 07:43:01 [scrapy] INFO: Crawled 20106 pages (at 66 pages/min), scraped 19146 items (at 63 items/min)
+2016-08-28 07:44:01 [scrapy] INFO: Crawled 20169 pages (at 63 pages/min), scraped 19206 items (at 60 items/min)
+2016-08-28 07:45:01 [scrapy] INFO: Crawled 20224 pages (at 55 pages/min), scraped 19258 items (at 52 items/min)
+2016-08-28 07:46:01 [scrapy] INFO: Crawled 20278 pages (at 54 pages/min), scraped 19310 items (at 52 items/min)
+2016-08-28 07:47:01 [scrapy] INFO: Crawled 20338 pages (at 60 pages/min), scraped 19367 items (at 57 items/min)
+2016-08-28 07:48:01 [scrapy] INFO: Crawled 20406 pages (at 68 pages/min), scraped 19432 items (at 65 items/min)
+2016-08-28 07:49:01 [scrapy] INFO: Crawled 20474 pages (at 68 pages/min), scraped 19497 items (at 65 items/min)
+2016-08-28 07:50:01 [scrapy] INFO: Crawled 20538 pages (at 64 pages/min), scraped 19557 items (at 60 items/min)
+2016-08-28 07:51:01 [scrapy] INFO: Crawled 20603 pages (at 65 pages/min), scraped 19619 items (at 62 items/min)
+2016-08-28 07:52:01 [scrapy] INFO: Crawled 20669 pages (at 66 pages/min), scraped 19682 items (at 63 items/min)
+2016-08-28 07:53:01 [scrapy] INFO: Crawled 20736 pages (at 67 pages/min), scraped 19746 items (at 64 items/min)
+2016-08-28 07:54:01 [scrapy] INFO: Crawled 20796 pages (at 60 pages/min), scraped 19803 items (at 57 items/min)
+2016-08-28 07:55:01 [scrapy] INFO: Crawled 20859 pages (at 63 pages/min), scraped 19863 items (at 60 items/min)
+2016-08-28 07:56:01 [scrapy] INFO: Crawled 20923 pages (at 64 pages/min), scraped 19923 items (at 60 items/min)
+2016-08-28 07:57:01 [scrapy] INFO: Crawled 20986 pages (at 63 pages/min), scraped 19984 items (at 61 items/min)
+2016-08-28 07:58:01 [scrapy] INFO: Crawled 21053 pages (at 67 pages/min), scraped 20048 items (at 64 items/min)
+2016-08-28 07:59:01 [scrapy] INFO: Crawled 21120 pages (at 67 pages/min), scraped 20112 items (at 64 items/min)
+2016-08-28 08:00:01 [scrapy] INFO: Crawled 21179 pages (at 59 pages/min), scraped 20168 items (at 56 items/min)
+2016-08-28 08:01:01 [scrapy] INFO: Crawled 21241 pages (at 62 pages/min), scraped 20227 items (at 59 items/min)
+2016-08-28 08:02:01 [scrapy] INFO: Crawled 21306 pages (at 65 pages/min), scraped 20288 items (at 61 items/min)
+2016-08-28 08:03:01 [scrapy] INFO: Crawled 21371 pages (at 65 pages/min), scraped 20351 items (at 63 items/min)
+2016-08-28 08:04:01 [scrapy] INFO: Crawled 21438 pages (at 67 pages/min), scraped 20415 items (at 64 items/min)
+2016-08-28 08:05:01 [scrapy] INFO: Crawled 21502 pages (at 64 pages/min), scraped 20476 items (at 61 items/min)
+2016-08-28 08:06:01 [scrapy] INFO: Crawled 21568 pages (at 66 pages/min), scraped 20538 items (at 62 items/min)
+2016-08-28 08:07:01 [scrapy] INFO: Crawled 21632 pages (at 64 pages/min), scraped 20599 items (at 61 items/min)
+2016-08-28 08:08:01 [scrapy] INFO: Crawled 21695 pages (at 63 pages/min), scraped 20659 items (at 60 items/min)
+2016-08-28 08:09:01 [scrapy] INFO: Crawled 21747 pages (at 52 pages/min), scraped 20709 items (at 50 items/min)
+2016-08-28 08:10:01 [scrapy] INFO: Crawled 21806 pages (at 59 pages/min), scraped 20765 items (at 56 items/min)
+2016-08-28 08:11:01 [scrapy] INFO: Crawled 21871 pages (at 65 pages/min), scraped 20827 items (at 62 items/min)
+2016-08-28 08:12:01 [scrapy] INFO: Crawled 21939 pages (at 68 pages/min), scraped 20892 items (at 65 items/min)
+2016-08-28 08:13:01 [scrapy] INFO: Crawled 22003 pages (at 64 pages/min), scraped 20953 items (at 61 items/min)
+2016-08-28 08:14:01 [scrapy] INFO: Crawled 22059 pages (at 56 pages/min), scraped 21005 items (at 52 items/min)
+2016-08-28 08:15:01 [scrapy] INFO: Crawled 22119 pages (at 60 pages/min), scraped 21063 items (at 58 items/min)
+2016-08-28 08:16:01 [scrapy] INFO: Crawled 22178 pages (at 59 pages/min), scraped 21119 items (at 56 items/min)
+2016-08-28 08:17:01 [scrapy] INFO: Crawled 22244 pages (at 66 pages/min), scraped 21182 items (at 63 items/min)
+2016-08-28 08:18:01 [scrapy] INFO: Crawled 22306 pages (at 62 pages/min), scraped 21241 items (at 59 items/min)
+2016-08-28 08:19:01 [scrapy] INFO: Crawled 22368 pages (at 62 pages/min), scraped 21300 items (at 59 items/min)
+2016-08-28 08:20:01 [scrapy] INFO: Crawled 22433 pages (at 65 pages/min), scraped 21362 items (at 62 items/min)
+2016-08-28 08:21:01 [scrapy] INFO: Crawled 22500 pages (at 67 pages/min), scraped 21426 items (at 64 items/min)
+2016-08-28 08:22:01 [scrapy] INFO: Crawled 22565 pages (at 65 pages/min), scraped 21488 items (at 62 items/min)
+2016-08-28 08:23:01 [scrapy] INFO: Crawled 22633 pages (at 68 pages/min), scraped 21553 items (at 65 items/min)
+2016-08-28 08:24:01 [scrapy] INFO: Crawled 22694 pages (at 61 pages/min), scraped 21610 items (at 57 items/min)
+2016-08-28 08:25:01 [scrapy] INFO: Crawled 22758 pages (at 64 pages/min), scraped 21672 items (at 62 items/min)
+2016-08-28 08:26:01 [scrapy] INFO: Crawled 22818 pages (at 60 pages/min), scraped 21729 items (at 57 items/min)
+2016-08-28 08:27:01 [scrapy] INFO: Crawled 22861 pages (at 43 pages/min), scraped 21770 items (at 41 items/min)
+2016-08-28 08:28:01 [scrapy] INFO: Crawled 22922 pages (at 61 pages/min), scraped 21828 items (at 58 items/min)
+2016-08-28 08:29:01 [scrapy] INFO: Crawled 22988 pages (at 66 pages/min), scraped 21891 items (at 63 items/min)
+2016-08-28 08:30:01 [scrapy] INFO: Crawled 23044 pages (at 56 pages/min), scraped 21944 items (at 53 items/min)
+2016-08-28 08:31:01 [scrapy] INFO: Crawled 23107 pages (at 63 pages/min), scraped 22004 items (at 60 items/min)
+2016-08-28 08:32:01 [scrapy] INFO: Crawled 23171 pages (at 64 pages/min), scraped 22065 items (at 61 items/min)
+2016-08-28 08:33:01 [scrapy] INFO: Crawled 23235 pages (at 64 pages/min), scraped 22126 items (at 61 items/min)
+2016-08-28 08:34:01 [scrapy] INFO: Crawled 23297 pages (at 62 pages/min), scraped 22185 items (at 59 items/min)
+2016-08-28 08:35:01 [scrapy] INFO: Crawled 23352 pages (at 55 pages/min), scraped 22237 items (at 52 items/min)
+2016-08-28 08:36:01 [scrapy] INFO: Crawled 23418 pages (at 66 pages/min), scraped 22300 items (at 63 items/min)
+2016-08-28 08:37:01 [scrapy] INFO: Crawled 23472 pages (at 54 pages/min), scraped 22352 items (at 52 items/min)
+2016-08-28 08:38:01 [scrapy] INFO: Crawled 23536 pages (at 64 pages/min), scraped 22413 items (at 61 items/min)
+2016-08-28 08:39:01 [scrapy] INFO: Crawled 23600 pages (at 64 pages/min), scraped 22474 items (at 61 items/min)
+2016-08-28 08:40:01 [scrapy] INFO: Crawled 23665 pages (at 65 pages/min), scraped 22535 items (at 61 items/min)
+2016-08-28 08:41:01 [scrapy] INFO: Crawled 23726 pages (at 61 pages/min), scraped 22594 items (at 59 items/min)
+2016-08-28 08:42:01 [scrapy] INFO: Crawled 23787 pages (at 61 pages/min), scraped 22652 items (at 58 items/min)
+2016-08-28 08:43:01 [scrapy] INFO: Crawled 23852 pages (at 65 pages/min), scraped 22714 items (at 62 items/min)
+2016-08-28 08:44:01 [scrapy] INFO: Crawled 23912 pages (at 60 pages/min), scraped 22771 items (at 57 items/min)
+2016-08-28 08:45:01 [scrapy] INFO: Crawled 23969 pages (at 57 pages/min), scraped 22824 items (at 53 items/min)
+2016-08-28 08:46:01 [scrapy] INFO: Crawled 24032 pages (at 63 pages/min), scraped 22885 items (at 61 items/min)
+2016-08-28 08:47:01 [scrapy] INFO: Crawled 24096 pages (at 64 pages/min), scraped 22946 items (at 61 items/min)
+2016-08-28 08:48:01 [scrapy] INFO: Crawled 24158 pages (at 62 pages/min), scraped 23005 items (at 59 items/min)
+2016-08-28 08:49:01 [scrapy] INFO: Crawled 24224 pages (at 66 pages/min), scraped 23068 items (at 63 items/min)
+2016-08-28 08:50:01 [scrapy] INFO: Crawled 24279 pages (at 55 pages/min), scraped 23120 items (at 52 items/min)
+2016-08-28 08:51:01 [scrapy] INFO: Crawled 24345 pages (at 66 pages/min), scraped 23183 items (at 63 items/min)
+2016-08-28 08:52:01 [scrapy] INFO: Crawled 24414 pages (at 69 pages/min), scraped 23248 items (at 65 items/min)
+2016-08-28 08:53:01 [scrapy] INFO: Crawled 24479 pages (at 65 pages/min), scraped 23311 items (at 63 items/min)
+2016-08-28 08:54:01 [scrapy] INFO: Crawled 24542 pages (at 63 pages/min), scraped 23371 items (at 60 items/min)
+2016-08-28 08:55:01 [scrapy] INFO: Crawled 24604 pages (at 62 pages/min), scraped 23430 items (at 59 items/min)
+2016-08-28 08:56:01 [scrapy] INFO: Crawled 24658 pages (at 54 pages/min), scraped 23481 items (at 51 items/min)
+2016-08-28 08:57:01 [scrapy] INFO: Crawled 24714 pages (at 56 pages/min), scraped 23535 items (at 54 items/min)
+2016-08-28 08:58:01 [scrapy] INFO: Crawled 24776 pages (at 62 pages/min), scraped 23594 items (at 59 items/min)
+2016-08-28 08:59:01 [scrapy] INFO: Crawled 24841 pages (at 65 pages/min), scraped 23656 items (at 62 items/min)
+2016-08-28 09:00:01 [scrapy] INFO: Crawled 24906 pages (at 65 pages/min), scraped 23717 items (at 61 items/min)
+2016-08-28 09:01:01 [scrapy] INFO: Crawled 24971 pages (at 65 pages/min), scraped 23778 items (at 61 items/min)
+2016-08-28 09:02:01 [scrapy] INFO: Crawled 25038 pages (at 67 pages/min), scraped 23843 items (at 65 items/min)
+2016-08-28 09:03:01 [scrapy] INFO: Crawled 25105 pages (at 67 pages/min), scraped 23907 items (at 64 items/min)
+2016-08-28 09:04:01 [scrapy] INFO: Crawled 25156 pages (at 51 pages/min), scraped 23956 items (at 49 items/min)
+2016-08-28 09:05:01 [scrapy] INFO: Crawled 25209 pages (at 53 pages/min), scraped 24006 items (at 50 items/min)
+2016-08-28 09:06:01 [scrapy] INFO: Crawled 25232 pages (at 23 pages/min), scraped 24028 items (at 22 items/min)
+2016-08-28 09:07:01 [scrapy] INFO: Crawled 25294 pages (at 62 pages/min), scraped 24087 items (at 59 items/min)
+2016-08-28 09:08:01 [scrapy] INFO: Crawled 25358 pages (at 64 pages/min), scraped 24148 items (at 61 items/min)
+2016-08-28 09:09:01 [scrapy] INFO: Crawled 25422 pages (at 64 pages/min), scraped 24209 items (at 61 items/min)
+2016-08-28 09:10:01 [scrapy] INFO: Crawled 25482 pages (at 60 pages/min), scraped 24266 items (at 57 items/min)
+2016-08-28 09:11:01 [scrapy] INFO: Crawled 25548 pages (at 66 pages/min), scraped 24329 items (at 63 items/min)
+2016-08-28 09:12:01 [scrapy] INFO: Crawled 25605 pages (at 57 pages/min), scraped 24383 items (at 54 items/min)
+2016-08-28 09:13:01 [scrapy] INFO: Crawled 25669 pages (at 64 pages/min), scraped 24444 items (at 61 items/min)
+2016-08-28 09:14:01 [scrapy] INFO: Crawled 25736 pages (at 67 pages/min), scraped 24508 items (at 64 items/min)
+2016-08-28 09:15:01 [scrapy] INFO: Crawled 25796 pages (at 60 pages/min), scraped 24565 items (at 57 items/min)
+2016-08-28 09:16:01 [scrapy] INFO: Crawled 25863 pages (at 67 pages/min), scraped 24629 items (at 64 items/min)
+2016-08-28 09:17:01 [scrapy] INFO: Crawled 25928 pages (at 65 pages/min), scraped 24691 items (at 62 items/min)
+2016-08-28 09:18:01 [scrapy] INFO: Crawled 25996 pages (at 68 pages/min), scraped 24756 items (at 65 items/min)
+2016-08-28 09:19:01 [scrapy] INFO: Crawled 26061 pages (at 65 pages/min), scraped 24817 items (at 61 items/min)
+2016-08-28 09:20:01 [scrapy] INFO: Crawled 26115 pages (at 54 pages/min), scraped 24868 items (at 51 items/min)
+2016-08-28 09:21:01 [scrapy] INFO: Crawled 26182 pages (at 67 pages/min), scraped 24933 items (at 65 items/min)
+2016-08-28 09:22:01 [scrapy] INFO: Crawled 26245 pages (at 63 pages/min), scraped 24993 items (at 60 items/min)
+2016-08-28 09:23:01 [scrapy] INFO: Crawled 26306 pages (at 61 pages/min), scraped 25051 items (at 58 items/min)
+2016-08-28 09:24:01 [scrapy] INFO: Crawled 26361 pages (at 55 pages/min), scraped 25103 items (at 52 items/min)
+2016-08-28 09:25:01 [scrapy] INFO: Crawled 26427 pages (at 66 pages/min), scraped 25166 items (at 63 items/min)
+2016-08-28 09:26:01 [scrapy] INFO: Crawled 26490 pages (at 63 pages/min), scraped 25226 items (at 60 items/min)
+2016-08-28 09:27:01 [scrapy] INFO: Crawled 26551 pages (at 61 pages/min), scraped 25284 items (at 58 items/min)
+2016-08-28 09:28:01 [scrapy] INFO: Crawled 26619 pages (at 68 pages/min), scraped 25349 items (at 65 items/min)
+2016-08-28 09:29:01 [scrapy] INFO: Crawled 26684 pages (at 65 pages/min), scraped 25411 items (at 62 items/min)
+2016-08-28 09:30:01 [scrapy] INFO: Crawled 26751 pages (at 67 pages/min), scraped 25475 items (at 64 items/min)
+2016-08-28 09:31:01 [scrapy] INFO: Crawled 26815 pages (at 64 pages/min), scraped 25536 items (at 61 items/min)
+2016-08-28 09:32:01 [scrapy] INFO: Crawled 26879 pages (at 64 pages/min), scraped 25597 items (at 61 items/min)
+2016-08-28 09:33:01 [scrapy] INFO: Crawled 26944 pages (at 65 pages/min), scraped 25658 items (at 61 items/min)
+2016-08-28 09:34:01 [scrapy] INFO: Crawled 27014 pages (at 70 pages/min), scraped 25724 items (at 66 items/min)
+2016-08-28 09:35:01 [scrapy] INFO: Crawled 27070 pages (at 56 pages/min), scraped 25778 items (at 54 items/min)
+2016-08-28 09:36:01 [scrapy] INFO: Crawled 27137 pages (at 67 pages/min), scraped 25842 items (at 64 items/min)
+2016-08-28 09:37:01 [scrapy] INFO: Crawled 27200 pages (at 63 pages/min), scraped 25902 items (at 60 items/min)
+2016-08-28 09:38:01 [scrapy] INFO: Crawled 27264 pages (at 64 pages/min), scraped 25963 items (at 61 items/min)
+2016-08-28 09:39:01 [scrapy] INFO: Crawled 27332 pages (at 68 pages/min), scraped 26028 items (at 65 items/min)
+2016-08-28 09:40:01 [scrapy] INFO: Crawled 27397 pages (at 65 pages/min), scraped 26090 items (at 62 items/min)
+2016-08-28 09:41:01 [scrapy] INFO: Crawled 27467 pages (at 70 pages/min), scraped 26156 items (at 66 items/min)
+2016-08-28 09:42:01 [scrapy] INFO: Crawled 27527 pages (at 60 pages/min), scraped 26214 items (at 58 items/min)
+2016-08-28 09:43:01 [scrapy] INFO: Crawled 27593 pages (at 66 pages/min), scraped 26277 items (at 63 items/min)
+2016-08-28 09:44:01 [scrapy] INFO: Crawled 27655 pages (at 62 pages/min), scraped 26335 items (at 58 items/min)
+2016-08-28 09:45:01 [scrapy] INFO: Crawled 27719 pages (at 64 pages/min), scraped 26397 items (at 62 items/min)
+2016-08-28 09:46:01 [scrapy] INFO: Crawled 27784 pages (at 65 pages/min), scraped 26457 items (at 60 items/min)
+2016-08-28 09:47:01 [scrapy] INFO: Crawled 27847 pages (at 63 pages/min), scraped 26518 items (at 61 items/min)
+2016-08-28 09:48:01 [scrapy] INFO: Crawled 27914 pages (at 67 pages/min), scraped 26582 items (at 64 items/min)
+2016-08-28 09:49:01 [scrapy] INFO: Crawled 27981 pages (at 67 pages/min), scraped 26646 items (at 64 items/min)
+2016-08-28 09:50:01 [scrapy] INFO: Crawled 28046 pages (at 65 pages/min), scraped 26708 items (at 62 items/min)
+2016-08-28 09:51:01 [scrapy] INFO: Crawled 28115 pages (at 69 pages/min), scraped 26774 items (at 66 items/min)
+2016-08-28 09:52:01 [scrapy] INFO: Crawled 28184 pages (at 69 pages/min), scraped 26839 items (at 65 items/min)
+2016-08-28 09:53:01 [scrapy] INFO: Crawled 28248 pages (at 64 pages/min), scraped 26900 items (at 61 items/min)
+2016-08-28 09:54:01 [scrapy] INFO: Crawled 28307 pages (at 59 pages/min), scraped 26957 items (at 57 items/min)
+2016-08-28 09:55:01 [scrapy] INFO: Crawled 28376 pages (at 69 pages/min), scraped 27022 items (at 65 items/min)
+2016-08-28 09:56:01 [scrapy] INFO: Crawled 28441 pages (at 65 pages/min), scraped 27084 items (at 62 items/min)
+2016-08-28 09:57:01 [scrapy] INFO: Crawled 28508 pages (at 67 pages/min), scraped 27148 items (at 64 items/min)
+2016-08-28 09:58:01 [scrapy] INFO: Crawled 28568 pages (at 60 pages/min), scraped 27205 items (at 57 items/min)
+2016-08-28 09:59:01 [scrapy] INFO: Crawled 28635 pages (at 67 pages/min), scraped 27269 items (at 64 items/min)
+2016-08-28 10:00:01 [scrapy] INFO: Crawled 28704 pages (at 69 pages/min), scraped 27335 items (at 66 items/min)
+2016-08-28 10:01:01 [scrapy] INFO: Crawled 28772 pages (at 68 pages/min), scraped 27399 items (at 64 items/min)
+2016-08-28 10:02:01 [scrapy] INFO: Crawled 28841 pages (at 69 pages/min), scraped 27465 items (at 66 items/min)
+2016-08-28 10:03:01 [scrapy] INFO: Crawled 28908 pages (at 67 pages/min), scraped 27529 items (at 64 items/min)
+2016-08-28 10:04:01 [scrapy] INFO: Crawled 28975 pages (at 67 pages/min), scraped 27593 items (at 64 items/min)
+2016-08-28 10:05:01 [scrapy] INFO: Crawled 29044 pages (at 69 pages/min), scraped 27658 items (at 65 items/min)
+2016-08-28 10:06:01 [scrapy] INFO: Crawled 29108 pages (at 64 pages/min), scraped 27719 items (at 61 items/min)
+2016-08-28 10:07:01 [scrapy] INFO: Crawled 29170 pages (at 62 pages/min), scraped 27778 items (at 59 items/min)
+2016-08-28 10:08:01 [scrapy] INFO: Crawled 29229 pages (at 59 pages/min), scraped 27835 items (at 57 items/min)
+2016-08-28 10:09:01 [scrapy] INFO: Crawled 29285 pages (at 56 pages/min), scraped 27888 items (at 53 items/min)
+2016-08-28 10:10:01 [scrapy] INFO: Crawled 29355 pages (at 70 pages/min), scraped 27955 items (at 67 items/min)
+2016-08-28 10:11:01 [scrapy] INFO: Crawled 29415 pages (at 60 pages/min), scraped 28012 items (at 57 items/min)
+2016-08-28 10:12:01 [scrapy] INFO: Crawled 29477 pages (at 62 pages/min), scraped 28071 items (at 59 items/min)
+2016-08-28 10:13:01 [scrapy] INFO: Crawled 29542 pages (at 65 pages/min), scraped 28133 items (at 62 items/min)
+2016-08-28 10:14:01 [scrapy] INFO: Crawled 29604 pages (at 62 pages/min), scraped 28192 items (at 59 items/min)
+2016-08-28 10:15:01 [scrapy] INFO: Crawled 29668 pages (at 64 pages/min), scraped 28252 items (at 60 items/min)
+2016-08-28 10:16:01 [scrapy] INFO: Crawled 29723 pages (at 55 pages/min), scraped 28305 items (at 53 items/min)
+2016-08-28 10:17:01 [scrapy] INFO: Crawled 29785 pages (at 62 pages/min), scraped 28364 items (at 59 items/min)
+2016-08-28 10:18:01 [scrapy] INFO: Crawled 29853 pages (at 68 pages/min), scraped 28429 items (at 65 items/min)
+2016-08-28 10:19:01 [scrapy] INFO: Crawled 29922 pages (at 69 pages/min), scraped 28495 items (at 66 items/min)
+2016-08-28 10:20:01 [scrapy] INFO: Crawled 29988 pages (at 66 pages/min), scraped 28557 items (at 62 items/min)
+2016-08-28 10:21:01 [scrapy] INFO: Crawled 30011 pages (at 23 pages/min), scraped 28579 items (at 22 items/min)
+2016-08-28 10:22:01 [scrapy] INFO: Crawled 30069 pages (at 58 pages/min), scraped 28635 items (at 56 items/min)
+2016-08-28 10:23:01 [scrapy] INFO: Crawled 30135 pages (at 66 pages/min), scraped 28697 items (at 62 items/min)
+2016-08-28 10:24:01 [scrapy] INFO: Crawled 30204 pages (at 69 pages/min), scraped 28763 items (at 66 items/min)
+2016-08-28 10:25:01 [scrapy] INFO: Crawled 30271 pages (at 67 pages/min), scraped 28826 items (at 63 items/min)
+2016-08-28 10:26:01 [scrapy] INFO: Crawled 30340 pages (at 69 pages/min), scraped 28893 items (at 67 items/min)
+2016-08-28 10:27:01 [scrapy] INFO: Crawled 30406 pages (at 66 pages/min), scraped 28956 items (at 63 items/min)
+2016-08-28 10:28:01 [scrapy] INFO: Crawled 30475 pages (at 69 pages/min), scraped 29021 items (at 65 items/min)
+2016-08-28 10:29:01 [scrapy] INFO: Crawled 30543 pages (at 68 pages/min), scraped 29086 items (at 65 items/min)
+2016-08-28 10:30:01 [scrapy] INFO: Crawled 30609 pages (at 66 pages/min), scraped 29149 items (at 63 items/min)
+2016-08-28 10:31:01 [scrapy] INFO: Crawled 30669 pages (at 60 pages/min), scraped 29206 items (at 57 items/min)
+2016-08-28 10:32:01 [scrapy] INFO: Crawled 30735 pages (at 66 pages/min), scraped 29268 items (at 62 items/min)
+2016-08-28 10:33:01 [scrapy] INFO: Crawled 30802 pages (at 67 pages/min), scraped 29333 items (at 65 items/min)
+2016-08-28 10:34:01 [scrapy] INFO: Crawled 30872 pages (at 70 pages/min), scraped 29399 items (at 66 items/min)
+2016-08-28 10:35:01 [scrapy] INFO: Crawled 30938 pages (at 66 pages/min), scraped 29462 items (at 63 items/min)
+2016-08-28 10:36:01 [scrapy] INFO: Crawled 31007 pages (at 69 pages/min), scraped 29528 items (at 66 items/min)
+2016-08-28 10:37:01 [scrapy] INFO: Crawled 31075 pages (at 68 pages/min), scraped 29593 items (at 65 items/min)
+2016-08-28 10:38:01 [scrapy] INFO: Crawled 31146 pages (at 71 pages/min), scraped 29659 items (at 66 items/min)
+2016-08-28 10:39:01 [scrapy] INFO: Crawled 31212 pages (at 66 pages/min), scraped 29723 items (at 64 items/min)
+2016-08-28 10:40:01 [scrapy] INFO: Crawled 31273 pages (at 61 pages/min), scraped 29781 items (at 58 items/min)
+2016-08-28 10:41:01 [scrapy] INFO: Crawled 31339 pages (at 66 pages/min), scraped 29844 items (at 63 items/min)
+2016-08-28 10:42:01 [scrapy] INFO: Crawled 31403 pages (at 64 pages/min), scraped 29905 items (at 61 items/min)
+2016-08-28 10:43:01 [scrapy] INFO: Crawled 31473 pages (at 70 pages/min), scraped 29972 items (at 67 items/min)
+2016-08-28 10:44:01 [scrapy] INFO: Crawled 31543 pages (at 70 pages/min), scraped 30038 items (at 66 items/min)
+2016-08-28 10:45:01 [scrapy] INFO: Crawled 31612 pages (at 69 pages/min), scraped 30104 items (at 66 items/min)
+2016-08-28 10:46:01 [scrapy] INFO: Crawled 31679 pages (at 67 pages/min), scraped 30168 items (at 64 items/min)
+2016-08-28 10:47:01 [scrapy] INFO: Crawled 31749 pages (at 70 pages/min), scraped 30235 items (at 67 items/min)
+2016-08-28 10:48:01 [scrapy] INFO: Crawled 31819 pages (at 70 pages/min), scraped 30301 items (at 66 items/min)
+2016-08-28 10:49:01 [scrapy] INFO: Crawled 31882 pages (at 63 pages/min), scraped 30361 items (at 60 items/min)
+2016-08-28 10:50:01 [scrapy] INFO: Crawled 31945 pages (at 63 pages/min), scraped 30421 items (at 60 items/min)
+2016-08-28 10:51:01 [scrapy] INFO: Crawled 32003 pages (at 58 pages/min), scraped 30475 items (at 54 items/min)
+2016-08-28 10:52:01 [scrapy] INFO: Crawled 32054 pages (at 51 pages/min), scraped 30522 items (at 47 items/min)
+2016-08-28 10:53:01 [scrapy] INFO: Crawled 32124 pages (at 70 pages/min), scraped 30585 items (at 63 items/min)
+2016-08-28 10:54:01 [scrapy] INFO: Crawled 32193 pages (at 69 pages/min), scraped 30649 items (at 64 items/min)
+2016-08-28 10:55:01 [scrapy] INFO: Crawled 32264 pages (at 71 pages/min), scraped 30712 items (at 63 items/min)
+2016-08-28 10:56:01 [scrapy] INFO: Crawled 32331 pages (at 67 pages/min), scraped 30773 items (at 61 items/min)
+2016-08-28 10:57:01 [scrapy] INFO: Crawled 32404 pages (at 73 pages/min), scraped 30840 items (at 67 items/min)
+2016-08-28 10:58:01 [scrapy] INFO: Crawled 32471 pages (at 67 pages/min), scraped 30901 items (at 61 items/min)
+2016-08-28 10:59:01 [scrapy] INFO: Crawled 32540 pages (at 69 pages/min), scraped 30964 items (at 63 items/min)
+2016-08-28 11:00:01 [scrapy] INFO: Crawled 32608 pages (at 68 pages/min), scraped 31026 items (at 62 items/min)
+2016-08-28 11:01:01 [scrapy] INFO: Crawled 32671 pages (at 63 pages/min), scraped 31082 items (at 56 items/min)
+2016-08-28 11:02:01 [scrapy] INFO: Crawled 32734 pages (at 63 pages/min), scraped 31140 items (at 58 items/min)
+2016-08-28 11:03:01 [scrapy] INFO: Crawled 32794 pages (at 60 pages/min), scraped 31194 items (at 54 items/min)
+2016-08-28 11:04:01 [scrapy] INFO: Crawled 32861 pages (at 67 pages/min), scraped 31255 items (at 61 items/min)
+2016-08-28 11:05:01 [scrapy] INFO: Crawled 32925 pages (at 64 pages/min), scraped 31313 items (at 58 items/min)
+2016-08-28 11:06:01 [scrapy] INFO: Crawled 32991 pages (at 66 pages/min), scraped 31373 items (at 60 items/min)
+2016-08-28 11:07:01 [scrapy] INFO: Crawled 33061 pages (at 70 pages/min), scraped 31437 items (at 64 items/min)
+2016-08-28 11:08:01 [scrapy] INFO: Crawled 33131 pages (at 70 pages/min), scraped 31501 items (at 64 items/min)
+2016-08-28 11:09:01 [scrapy] INFO: Crawled 33198 pages (at 67 pages/min), scraped 31563 items (at 62 items/min)
+2016-08-28 11:10:01 [scrapy] INFO: Crawled 33267 pages (at 69 pages/min), scraped 31626 items (at 63 items/min)
+2016-08-28 11:11:01 [scrapy] INFO: Crawled 33334 pages (at 67 pages/min), scraped 31687 items (at 61 items/min)
+2016-08-28 11:12:01 [scrapy] INFO: Crawled 33405 pages (at 71 pages/min), scraped 31750 items (at 63 items/min)
+2016-08-28 11:13:01 [scrapy] INFO: Crawled 33468 pages (at 63 pages/min), scraped 31809 items (at 59 items/min)
+2016-08-28 11:14:01 [scrapy] INFO: Crawled 33534 pages (at 66 pages/min), scraped 31869 items (at 60 items/min)
+2016-08-28 11:15:01 [scrapy] INFO: Crawled 33600 pages (at 66 pages/min), scraped 31929 items (at 60 items/min)
+2016-08-28 11:16:01 [scrapy] INFO: Crawled 33674 pages (at 74 pages/min), scraped 31996 items (at 67 items/min)
+2016-08-28 11:17:01 [scrapy] INFO: Crawled 33745 pages (at 71 pages/min), scraped 32061 items (at 65 items/min)
+2016-08-28 11:18:01 [scrapy] INFO: Crawled 33820 pages (at 75 pages/min), scraped 32092 items (at 31 items/min)
+2016-08-28 11:19:01 [scrapy] INFO: Crawled 33899 pages (at 79 pages/min), scraped 32092 items (at 0 items/min)
+2016-08-28 11:20:01 [scrapy] INFO: Crawled 33979 pages (at 80 pages/min), scraped 32092 items (at 0 items/min)
+2016-08-28 11:21:01 [scrapy] INFO: Crawled 34057 pages (at 78 pages/min), scraped 32092 items (at 0 items/min)
+2016-08-28 11:21:31 [scrapy] INFO: Closing spider (finished)
+2016-08-28 11:21:31 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 19824386,
+ 'downloader/request_count': 34112,
+ 'downloader/request_method_count/GET': 34112,
+ 'downloader/response_bytes': 830519240,
+ 'downloader/response_count': 34112,
+ 'downloader/response_status_count/200': 34090,
+ 'downloader/response_status_count/302': 3,
+ 'downloader/response_status_count/500': 16,
+ 'downloader/response_status_count/502': 2,
+ 'downloader/response_status_count/503': 1,
+ 'dupefilter/filtered': 7868,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 8, 28, 18, 21, 31, 438687),
+ 'item_scraped_count': 32092,
+ 'log_count/INFO': 546,
+ 'request_depth_max': 999,
+ 'response_received_count': 34092,
+ 'scheduler/dequeued': 34112,
+ 'scheduler/dequeued/memory': 34112,
+ 'scheduler/enqueued': 34112,
+ 'scheduler/enqueued/memory': 34112,
+ 'start_time': datetime.datetime(2016, 8, 28, 9, 22, 1, 895011)}
+2016-08-28 11:21:31 [scrapy] INFO: Spider closed (finished)
