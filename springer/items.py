@@ -47,3 +47,4 @@ class SpringerBookItem(scrapy.Item):
     views = Field(output_processor=TakeFirst())
     abstract = Field(output_processor=Join())
     url = Field(output_processor=TakeFirst())
+    crawl_date = Field(output_processor=TakeFirst())

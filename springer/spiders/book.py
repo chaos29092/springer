@@ -23,10 +23,12 @@ class BookSpider(CrawlSpider):
     }
 
     rules = (
-        Rule(LinkExtractor(allow=('/search\？.*')),follow=False),
         Rule(LinkExtractor(allow=('/search/page/[0-9]*.*'), restrict_xpaths=("//a[@title='next']")),follow=True),
         Rule(LinkExtractor(allow=('/chapter/.*'),restrict_xpaths=('//a[@class="title"]')),follow=True, callback='parse_item')
     )
+
+    def parse_start_url(self, response):
+        return self.parse_item(response)
 
     def parse_item(self, response):
         loader = ItemLoader(SpringerBookItem(),response)

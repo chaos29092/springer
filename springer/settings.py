@@ -14,8 +14,8 @@ BOT_NAME = 'springer'
 SPIDER_MODULES = ['springer.spiders']
 NEWSPIDER_MODULE = 'springer.spiders'
 
-# LOG_FILE = 'test.log'
-# LOG_LEVEL = 'INFO'
+LOG_FILE = 'article.log'
+LOG_LEVEL = 'INFO'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'springer (+http://www.yourdomain.com)'
 
@@ -60,14 +60,14 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
+# EXTENSIONS = {
 #    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
+# }
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'springer.pipelines.JsonWithEncodingPipeline': 200,
+    'springer.pipelines.JsonWithEncodingPipeline': 300,
     # 'springer.pipelines.MongoChemistryPipeline': 300,
 }
 

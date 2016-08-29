@@ -3,7 +3,7 @@ import codecs
 import json
 import pymongo
 
-class MongoChemistryPipeline(object):
+class MongoChemistryArticlePipeline(object):
 
     collection_name = 'chemistry'
 

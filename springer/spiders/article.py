@@ -4,26 +4,29 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from scrapy.loader import ItemLoader
 from springer.items import SpringerItem
-
+import time
 
 class ArticleSpider(CrawlSpider):
     name = "article"
     allowed_domains = ["link.springer.com"]
     start_urls = (
-        'http://link.springer1.com/search?facet-discipline=%22Chemistry%22&facet-content-type=%22Article%22&sortOrder=newestFirst&date-facet-mode=between&facet-start-year=2016&previous-start-year=1862&facet-end-year=2016&previous-end-year=2016',
-        'http://link.springer.com/search?date-facet-mode=between&facet-discipline=%22Chemistry%22&facet-end-year=2016&previous-end-year=2016&sortOrder=oldestFirst&previous-start-year=1862&facet-start-year=2016&facet-content-type=%22Article%22',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&facet-start-year=2013&previous-start-year=2015&facet-end-year=2013&previous-end-year=2015',
+	'http://link.springer.com/search?previous-end-year=2015&previous-start-year=2015&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&facet-end-year=2013&facet-start-year=2013&facet-content-type=%22Article%22',
+	'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&facet-start-year=2014&previous-start-year=2013&facet-end-year=2014&previous-end-year=2013',
+	'http://link.springer.com/search?facet-start-year=2014&previous-end-year=2013&facet-discipline=%22Chemistry%22&sortOrder=newestFirst&facet-end-year=2014&facet-content-type=%22Article%22&previous-start-year=2013',
     )
     custom_settings = {
         'ITEM_PIPELINES':{
-            'springer.pipelines.MongoChemistryPipeline': 300,
+            'springer.pipelines.MongoChemistryArticlePipeline': 300,
             },
     }
 
     rules = (
-        Rule(LinkExtractor(allow=('/search\？.*')),follow=False),
         Rule(LinkExtractor(allow=('/search/page/[0-9]*.*'), restrict_xpaths=("//a[@title='next']")),follow=True),
         Rule(LinkExtractor(allow=('/article/.*'),restrict_xpaths=('//a[@class="title"]')),follow=True, callback='parse_item')
     )
+    def parse_start_url(self, response):
+        return self.parse_item(response)
 
     def parse_item(self, response):
         loader = ItemLoader(SpringerItem(),response)
@@ -39,6 +42,8 @@ class ArticleSpider(CrawlSpider):
         loader.add_xpath('views','//span[@class="article-metrics__views"]/text()')
         loader.add_xpath('abstract','//p[@id="Par1"]/text()')
         loader.add_value('url',response.url)
+        loader.add_value('crawl_date', time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time())))
+
 
         for sel in response.xpath('//ul[@data-component="SpringerLink-Authors"]/li'):
             name = sel.xpath('span[@data-role="author__name"]/text()').extract_first()
