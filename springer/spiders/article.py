@@ -10,10 +10,8 @@ class ArticleSpider(CrawlSpider):
     name = "article"
     allowed_domains = ["link.springer.com"]
     start_urls = (
-        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&facet-start-year=2013&previous-start-year=2015&facet-end-year=2013&previous-end-year=2015',
-	'http://link.springer.com/search?previous-end-year=2015&previous-start-year=2015&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&facet-end-year=2013&facet-start-year=2013&facet-content-type=%22Article%22',
-	'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&facet-start-year=2014&previous-start-year=2013&facet-end-year=2014&previous-end-year=2013',
-	'http://link.springer.com/search?facet-start-year=2014&previous-end-year=2013&facet-discipline=%22Chemistry%22&sortOrder=newestFirst&facet-end-year=2014&facet-content-type=%22Article%22&previous-start-year=2013',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&date-facet-mode=between&facet-start-year=2012&previous-start-year=2013&facet-end-year=2012&previous-end-year=2013',
+	    'http://link.springer.com/search?facet-end-year=2012&date-facet-mode=between&previous-end-year=2013&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&facet-start-year=2012&facet-content-type=%22Article%22&previous-start-year=2013',
     )
     custom_settings = {
         'ITEM_PIPELINES':{
