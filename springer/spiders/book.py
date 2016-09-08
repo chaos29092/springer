@@ -18,7 +18,7 @@ class BookSpider(CrawlSpider):
     )
     custom_settings = {
         'ITEM_PIPELINES':{
-            'springer.pipelines.MongoChemistryBookPipeline': 300,
+            'springer.pipelines.MongoBookPipeline': 300,
             },
     }
 

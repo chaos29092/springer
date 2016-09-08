@@ -3,9 +3,9 @@ import codecs
 import json
 import pymongo
 
-class MongoChemistryArticlePipeline(object):
+class MongoArticlePipeline(object):
 
-    collection_name = 'test'
+    collection_name = 'article'
 
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri
@@ -26,12 +26,15 @@ class MongoChemistryArticlePipeline(object):
         self.client.close()
 
     def process_item(self, item, spider):
-        self.db[self.collection_name].insert(dict(item))
-        return item
+        try:
+            self.db[self.collection_name].insert(dict(item))
+            return item
+        except:
+            return item
 
-class MongoChemistryBookPipeline(object):
+class MongoBookPipeline(object):
 
-    collection_name = 'chemistry_book'
+    collection_name = 'book'
 
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri
