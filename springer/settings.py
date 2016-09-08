@@ -14,6 +14,9 @@ BOT_NAME = 'springer'
 SPIDER_MODULES = ['springer.spiders']
 NEWSPIDER_MODULE = 'springer.spiders'
 
+MONGO_URI = 'localhost'
+MONGO_DATABASE = 'test'
+
 LOG_FILE = 'article.log'
 LOG_LEVEL = 'INFO'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -23,7 +26,7 @@ LOG_LEVEL = 'INFO'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 100
+CONCURRENT_REQUESTS = 10
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
@@ -71,8 +74,7 @@ ITEM_PIPELINES = {
     # 'springer.pipelines.MongoChemistryPipeline': 300,
 }
 
-MONGO_URI = 'localhost'
-MONGO_DATABASE = 'springer'
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

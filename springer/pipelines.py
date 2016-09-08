@@ -5,7 +5,7 @@ import pymongo
 
 class MongoChemistryArticlePipeline(object):
 
-    collection_name = 'chemistry'
+    collection_name = 'test'
 
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri

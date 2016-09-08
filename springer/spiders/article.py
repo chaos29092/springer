@@ -10,8 +10,24 @@ class ArticleSpider(CrawlSpider):
     name = "article"
     allowed_domains = ["link.springer.com"]
     start_urls = (
-        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&date-facet-mode=between&facet-start-year=2012&previous-start-year=2013&facet-end-year=2012&previous-end-year=2013',
-	    'http://link.springer.com/search?facet-end-year=2012&date-facet-mode=between&previous-end-year=2013&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&facet-start-year=2012&facet-content-type=%22Article%22&previous-start-year=2013',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&date-facet-mode=between&facet-start-year=2011&previous-start-year=2012&facet-end-year=2011&previous-end-year=2012',
+        'http://link.springer.com/search?date-facet-mode=between&previous-end-year=2012&facet-discipline=%22Chemistry%22&facet-end-year=2011&facet-start-year=2011&sortOrder=oldestFirst&previous-start-year=2012&facet-content-type=%22Article%22',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&date-facet-mode=between&facet-start-year=2010&previous-start-year=2011&facet-end-year=2010&previous-end-year=2011',
+        'http://link.springer.com/search?date-facet-mode=between&facet-start-year=2010&facet-discipline=%22Chemistry%22&previous-start-year=2011&sortOrder=newestFirst&facet-end-year=2010&previous-end-year=2011&facet-content-type=%22Article%22',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&date-facet-mode=between&facet-start-year=2009&previous-start-year=2010&facet-end-year=2009&previous-end-year=2010',
+        'http://link.springer.com/search?date-facet-mode=between&previous-start-year=2010&facet-discipline=%22Chemistry%22&facet-start-year=2009&sortOrder=oldestFirst&facet-end-year=2009&facet-content-type=%22Article%22&previous-end-year=2010',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&date-facet-mode=between&facet-start-year=2008&previous-start-year=2009&facet-end-year=2008&previous-end-year=2009',
+        'http://link.springer.com/search?date-facet-mode=between&facet-discipline=%22Chemistry%22&previous-start-year=2009&sortOrder=newestFirst&previous-end-year=2009&facet-end-year=2008&facet-start-year=2008&facet-content-type=%22Article%22',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&date-facet-mode=between&facet-start-year=2007&previous-start-year=2008&facet-end-year=2007&previous-end-year=2008',
+        'http://link.springer.com/search?date-facet-mode=between&previous-end-year=2008&facet-start-year=2007&facet-discipline=%22Chemistry%22&previous-start-year=2008&facet-end-year=2007&sortOrder=oldestFirst&facet-content-type=%22Article%22',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&date-facet-mode=between&facet-start-year=2006&previous-start-year=2007&facet-end-year=2006&previous-end-year=2007',
+        'http://link.springer.com/search?facet-end-year=2006&date-facet-mode=between&facet-discipline=%22Chemistry%22&facet-start-year=2006&sortOrder=newestFirst&previous-start-year=2007&previous-end-year=2007&facet-content-type=%22Article%22',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&sortOrder=newestFirst&facet-discipline=%22Chemistry%22&date-facet-mode=between&facet-start-year=2004&previous-start-year=2006&facet-end-year=2005&previous-end-year=2006',
+        'http://link.springer.com/search?date-facet-mode=between&facet-discipline=%22Chemistry%22&facet-end-year=2005&sortOrder=oldestFirst&previous-end-year=2006&previous-start-year=2006&facet-content-type=%22Article%22&facet-start-year=2004',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&date-facet-mode=between&facet-start-year=2002&previous-start-year=2004&facet-end-year=2003&previous-end-year=2005',
+        'http://link.springer.com/search?date-facet-mode=between&facet-discipline=%22Chemistry%22&sortOrder=newestFirst&previous-end-year=2005&previous-start-year=2004&facet-end-year=2003&facet-content-type=%22Article%22&facet-start-year=2002',
+        'http://link.springer.com/search?facet-content-type=%22Article%22&facet-discipline=%22Chemistry%22&sortOrder=oldestFirst&date-facet-mode=between&facet-start-year=2000&previous-start-year=2002&facet-end-year=2001&previous-end-year=2003',
+        'http://link.springer.com/search?date-facet-mode=between&facet-end-year=2001&facet-discipline=%22Chemistry%22&facet-start-year=2000&sortOrder=newestFirst&previous-end-year=2003&previous-start-year=2002&facet-content-type=%22Article%22',
     )
     custom_settings = {
         'ITEM_PIPELINES':{
